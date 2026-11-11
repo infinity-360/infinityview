@@ -10,17 +10,21 @@ window.SITE = {
 
   // Tours que abrem dentro do site (modal com iframe)
   tours: {
-    "academia-vip": {
-      title: "Academia VIP · Maringá-PR",
-      url: "https://tour360.mgtour360.com.br/tour/academiavip-maringa/"
+    "faz-bem": {
+      title: "Restaurante Faz Bem",
+      name: "Restaurante Faz Bem",
+      place: "Restaurante e marmitaria",
+      desc: "Da calçada ao salão: conheça o restaurante por dentro antes mesmo de chegar.",
+      img: "planeta-fazbem.webp",
+      url: "https://lucastows360.github.io/tour360restaurantefazbem/"
     },
     "decor-colors": {
       title: "Decor Colors · Maringá-PR",
-      url: "https://lucastows360.github.io/TourDecorColorsMaringa/"
-    },
-    "faz-bem": {
-      title: "Restaurante Faz Bem",
-      url: "https://lucastows360.github.io/tour360restaurantefazbem/"
+      name: "Decor Colors",
+      place: "Maringá · PR",
+      desc: "Cimento queimado, tintas e revestimentos: entre na loja e veja cada detalhe.",
+      img: "planeta-decor-colors.webp",
+      url: "https://lucastows360.github.io/decorcolorsmaringa360/"
     }
   }
 };

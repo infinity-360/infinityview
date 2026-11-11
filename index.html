@@ -176,24 +176,28 @@
       <p class="hero-hint hero-anim"><svg><use href="#i-360"/></svg> Arraste o fundo para girar em 360°</p>
     </div>
 
-    <aside class="tour-card hero-anim" aria-label="Projeto em destaque">
+    <aside class="tour-card hero-anim" aria-label="Projetos em destaque" data-tour-card>
       <span class="tour-card-tag"><i></i>Explore um projeto real</span>
+      <div class="tour-switch" role="tablist" aria-label="Escolha um tour">
+        <button type="button" role="tab" aria-selected="true" data-tour-key="faz-bem">Restaurante Faz Bem</button>
+        <button type="button" role="tab" aria-selected="false" data-tour-key="decor-colors">Decor Colors</button>
+      </div>
       <div class="tour-card-frame">
         <div class="tour-card-preview" data-tour-preview>
           <div class="tsp-pano" aria-hidden="true"></div>
           <div class="tour-card-glass">
             <span class="badge-360">Tour virtual 360°</span>
             <p class="eyebrow">Uma experiência imersiva</p>
-            <h2>Explore a Academia VIP <em>em 360°</em></h2>
-            <p class="tour-card-desc">Recepção, cardio, musculação, funcional e muito mais — navegue por cada ambiente.</p>
-            <div class="tour-card-stats"><span><b>23</b> pontos 360°</span><span><b>9</b> ambientes</span></div>
+            <h2>Explore <span data-tf="name">Restaurante Faz Bem</span> <em>em 360°</em></h2>
+            <p class="tour-card-desc" data-tf="desc">Da calçada ao salão: conheça o restaurante por dentro antes mesmo de chegar.</p>
+            <div class="tour-card-stats"><span>Navegue pelo celular ou computador</span></div>
           </div>
-          <div class="tour-ring" aria-hidden="true"><span>360°</span></div>
+          <div class="tour-ring" aria-hidden="true"><img data-tf="img" src="planeta-fazbem.webp" alt=""></div>
         </div>
-        <button class="tour-card-btn" type="button" data-open-tour="academia-vip">Entrar neste tour <svg><use href="#i-arrow"/></svg></button>
+        <button class="tour-card-btn" type="button" data-open-tour="faz-bem">Entrar neste tour <svg><use href="#i-arrow"/></svg></button>
       </div>
       <div class="tour-card-foot">
-        <div><strong>ACADEMIA VIP</strong><span>Maringá · PR</span></div>
+        <div><strong data-tf="nameUp">RESTAURANTE FAZ BEM</strong><span data-tf="place">Restaurante e marmitaria</span></div>
         <span class="pill-360">360°</span>
       </div>
     </aside>
@@ -390,15 +394,19 @@
     <div class="sec-head">
       <p class="kicker reveal">Experiência imersiva</p>
       <h2 class="h2 reveal">Entre agora em um <span class="grad">tour real</span>.</h2>
-      <p class="lead reveal">Clique e navegue pela Academia VIP sem sair desta página. Arraste para olhar ao redor e use o menu para trocar de ambiente.</p>
+      <p class="lead reveal">Escolha um projeto e navegue sem sair desta página. Arraste para olhar ao redor e explore cada ambiente.</p>
     </div>
 
+    <div class="tour-switch tour-switch-lg reveal" role="tablist" aria-label="Escolha um tour" data-stage-switch>
+      <button type="button" role="tab" aria-selected="true" data-tour-key="faz-bem">Restaurante Faz Bem</button>
+      <button type="button" role="tab" aria-selected="false" data-tour-key="decor-colors">Decor Colors · Maringá</button>
+    </div>
     <div class="tour-stage reveal" id="tourStage">
-      <div class="tour-stage-bar"><span class="tsb-dots"><i></i><i></i><i></i></span><span class="tsb-url">Academia VIP · Maringá-PR · Tour Virtual 360°</span><button class="tsb-btn" type="button" data-tour-fs aria-label="Abrir tour em tela cheia"><svg><use href="#i-expand"/></svg></button></div>
+      <div class="tour-stage-bar"><span class="tsb-dots"><i></i><i></i><i></i></span><span class="tsb-url" id="tsbUrl">Restaurante Faz Bem · Tour Virtual 360°</span><button class="tsb-btn" type="button" data-tour-fs aria-label="Abrir tour em tela cheia"><svg><use href="#i-expand"/></svg></button></div>
       <div class="tour-stage-view">
         <div class="tour-stage-poster">
           <div class="tsp-pano" aria-hidden="true"></div>
-          <button class="tour-play" type="button" data-load-inline><span class="tp-ring"><svg><use href="#i-360"/></svg></span><strong>Iniciar tour 360°</strong><small>23 pontos · 9 ambientes</small></button>
+          <button class="tour-play" type="button" data-load-inline><span class="tp-ring"><svg><use href="#i-360"/></svg></span><strong>Iniciar tour 360°</strong><small id="tpName">Restaurante Faz Bem</small></button>
         </div>
       </div>
     </div>
@@ -408,8 +416,7 @@
         <h3 class="h3 reveal">Veja na prática</h3>
         <p class="reveal">Gravações reais de projetos: tours no celular, imagens aéreas e vídeos produzidos.</p>
         <div class="showcase-tabs" role="tablist" aria-label="Demonstrações">
-          <button role="tab" aria-selected="true" data-video="tour-force-one.mp4" data-poster="poster-tour-force-one.webp"><svg><use href="#i-360"/></svg><span><strong>Tour 360° no celular</strong><small>Force One</small></span></button>
-          <button role="tab" aria-selected="false" data-video="tour-tokled.mp4" data-poster="poster-tour-tokled.webp"><svg><use href="#i-store"/></svg><span><strong>Tour de loja com botões</strong><small>Tokled</small></span></button>
+          <button role="tab" aria-selected="true" data-video="tour-tokled.mp4" data-poster="poster-tour-tokled.webp"><svg><use href="#i-store"/></svg><span><strong>Tour de loja com botões</strong><small>Tokled</small></span></button>
           <button role="tab" aria-selected="false" data-video="tour-decor-colors.mp4" data-poster="poster-tour-decor-colors.webp"><svg><use href="#i-street"/></svg><span><strong>Da rua para dentro da loja</strong><small>Decor Colors</small></span></button>
           <button role="tab" aria-selected="false" data-video="drone-industria.mp4" data-poster="poster-drone-industria.webp"><svg><use href="#i-drone"/></svg><span><strong>Captação aérea</strong><small>Drone em 4K</small></span></button>
           <button role="tab" aria-selected="false" data-video="video-imobiliario.mp4" data-poster="poster-video-imobiliario.webp"><svg><use href="#i-play"/></svg><span><strong>Vídeo imobiliário</strong><small>Vídeo comercial</small></span></button>
@@ -417,7 +424,7 @@
       </div>
       <div class="phone reveal">
         <div class="phone-frame">
-          <video id="showcaseVideo" src="tour-force-one.mp4" poster="poster-tour-force-one.webp" muted playsinline loop preload="none"></video>
+          <video id="showcaseVideo" src="tour-tokled.mp4" poster="poster-tour-tokled.webp" muted playsinline loop preload="none"></video>
           <button class="phone-sound" type="button" aria-label="Ativar som" aria-pressed="false"><svg><use href="#i-mute"/></svg></button>
         </div>
         <div class="phone-glow" aria-hidden="true"></div>
@@ -448,21 +455,13 @@
       <a class="filters-link" href="#sites">Sites <svg><use href="#i-arrow"/></svg></a>
     </div>
     <div class="pf-grid" id="pfGrid">
-      <article class="pf-item pf-wide" data-cat="tour" data-open-tour="academia-vip" tabindex="0" role="button" aria-label="Abrir tour virtual 360° da Academia VIP">
-        <div class="pf-media pf-tour-media"><div class="tsp-pano" aria-hidden="true"></div><span class="pf-play"><svg><use href="#i-360"/></svg></span></div>
-        <div class="pf-info"><span class="pf-cat">Tour virtual 360°</span><h3>Academia VIP</h3><p>Maringá-PR · 23 pontos 360°</p></div>
+      <article class="pf-item pf-wide" data-cat="tour" data-open-tour="faz-bem" tabindex="0" role="button" aria-label="Abrir tour virtual 360° do Restaurante Faz Bem">
+        <div class="pf-media"><img src="planeta-fazbem.webp" alt="Abrir tour virtual 360° do Restaurante Faz Bem" loading="lazy"><span class="pf-play"><svg><use href="#i-360"/></svg></span></div>
+        <div class="pf-info"><span class="pf-cat">Tour virtual 360°</span><h3>Restaurante Faz Bem</h3><p>Restaurante e marmitaria · tour navegável</p></div>
       </article>
       <article class="pf-item pf-tall" data-cat="tour" data-open-tour="decor-colors" tabindex="0" role="button" aria-label="Abrir tour virtual 360° da Decor Colors Maringá">
         <div class="pf-media"><img src="planeta-decor-colors.webp" alt="Abrir tour virtual 360° da Decor Colors Maringá" loading="lazy"><span class="pf-play"><svg><use href="#i-360"/></svg></span></div>
         <div class="pf-info"><span class="pf-cat">Tour virtual 360°</span><h3>Decor Colors</h3><p>Maringá-PR · tour navegável</p></div>
-      </article>
-      <article class="pf-item pf-tall" data-cat="tour" data-open-tour="faz-bem" tabindex="0" role="button" aria-label="Abrir tour virtual 360° do Restaurante Faz Bem">
-        <div class="pf-media"><img src="planeta-fazbem.webp" alt="Abrir tour virtual 360° do Restaurante Faz Bem" loading="lazy"><span class="pf-play"><svg><use href="#i-360"/></svg></span></div>
-        <div class="pf-info"><span class="pf-cat">Tour virtual 360°</span><h3>Restaurante Faz Bem</h3><p>Tour navegável</p></div>
-      </article>
-      <article class="pf-item pf-tall" data-cat="tour" data-video="tour-force-one.mp4" data-title="Force One — tour virtual 360°" tabindex="0" role="button" aria-label="Assistir gravação do tour da Force One">
-        <div class="pf-media"><img src="poster-tour-force-one.webp" alt="Assistir gravação do tour da Force One" loading="lazy"><span class="pf-play"><svg><use href="#i-play"/></svg></span></div>
-        <div class="pf-info"><span class="pf-cat">Tour virtual 360°</span><h3>Force One</h3><p>Gravação do tour no celular</p></div>
       </article>
       <article class="pf-item pf-tall" data-cat="drone" data-video="drone-industria.mp4" data-title="Captação aérea — indústria" tabindex="0" role="button" aria-label="Assistir vídeo aéreo de indústria">
         <div class="pf-media"><img src="poster-drone-industria.webp" alt="Assistir vídeo aéreo de indústria" loading="lazy"><span class="pf-play"><svg><use href="#i-play"/></svg></span></div>

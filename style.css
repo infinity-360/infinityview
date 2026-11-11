@@ -688,3 +688,15 @@ body.is-ready .wa-float{transform:none}
 .experience{overflow-x:clip}
 [hidden]{display:none!important}
 .wd-screen iframe,.live-thumb iframe{max-width:none}
+
+/* seletor de tours */
+.tour-switch{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tour-switch button{padding:10px 16px;border-radius:999px;border:1px solid var(--line-2);background:rgba(8,14,24,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:600 13.5px var(--font-b);color:#cfd6e0;transition:background .3s,color .3s,border-color .3s}
+.tour-switch button:hover{border-color:var(--blue);color:#fff}
+.tour-switch button[aria-selected="true"]{background:#fff;color:#04060A;border-color:#fff}
+.tour-switch-lg{margin-bottom:18px}
+.tour-switch-lg button{padding:12px 20px;font-size:15px}
+.tour-ring{overflow:visible}
+.tour-ring img{width:100%;height:100%;border-radius:50%;object-fit:cover;animation:spin 40s linear infinite;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.tour-card-glass.is-swap{animation:swapIn .5s var(--ease)}
+@keyframes swapIn{from{opacity:0;transform:translateY(10px)}}

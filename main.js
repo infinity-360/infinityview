@@ -322,18 +322,46 @@
   }
   $$("[data-open-tour]").forEach(el => el.addEventListener("click", () => openTour(el.dataset.openTour)));
 
+  /* ---------- seletor de tours (topo do site) ---------- */
+  const card = $("[data-tour-card]");
+  function setCardTour(key) {
+    const t = (S.tours || {})[key]; if (!t || !card) return;
+    $$("[data-tour-key]", card).forEach(b => b.setAttribute("aria-selected", b.dataset.tourKey === key));
+    $$("[data-tf]", card).forEach(el => {
+      const f = el.dataset.tf;
+      if (f === "img") el.src = t.img;
+      else if (f === "nameUp") el.textContent = t.name.toUpperCase();
+      else el.textContent = t[f];
+    });
+    $("[data-open-tour]", card).dataset.openTour = key;
+    const g = $(".tour-card-glass", card); g.classList.remove("is-swap"); void g.offsetWidth; g.classList.add("is-swap");
+  }
+  if (card) $$("[data-tour-key]", card).forEach(b => b.addEventListener("click", () => setCardTour(b.dataset.tourKey)));
+
   /* ---------- tour inline na seção Experiência ---------- */
   const stage = $("#tourStage");
   const stageView = $(".tour-stage-view", stage);
-  $("[data-load-inline]", stage).addEventListener("click", () => {
-    const t = S.tours["academia-vip"];
+  const posterHTML = stageView.innerHTML;
+  let stageKey = "faz-bem";
+  function loadInline() {
+    const t = S.tours[stageKey];
     stageView.innerHTML = `<iframe src="${t.url}" title="Tour virtual 360° — ${t.title}" allow="fullscreen; autoplay; xr-spatial-tracking; gyroscope; accelerometer; magnetometer" allowfullscreen></iframe>`;
-    track("tour_inline", { tour: "academia-vip" });
-  });
+    track("tour_inline", { tour: stageKey });
+  }
+  function bindPoster() { const b = $("[data-load-inline]", stage); if (b) b.addEventListener("click", loadInline); }
+  bindPoster();
+  $$("[data-stage-switch] [data-tour-key]").forEach(b => b.addEventListener("click", () => {
+    stageKey = b.dataset.tourKey;
+    $$("[data-stage-switch] [data-tour-key]").forEach(x => x.setAttribute("aria-selected", x === b));
+    const t = S.tours[stageKey];
+    $("#tsbUrl").textContent = `${t.name} · Tour Virtual 360°`;
+    if ($("iframe", stageView)) loadInline();
+    else { stageView.innerHTML = posterHTML; $("#tpName").textContent = t.name; bindPoster(); }
+  }));
   $("[data-tour-fs]", stage).addEventListener("click", () => {
     const f = $("iframe", stageView);
     if (f && (f.requestFullscreen || f.webkitRequestFullscreen)) (f.requestFullscreen || f.webkitRequestFullscreen).call(f);
-    else openTour("academia-vip");
+    else openTour(stageKey);
   });
 
   /* ==========================================================
