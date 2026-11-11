@@ -355,8 +355,8 @@
     $$("[data-stage-switch] [data-tour-key]").forEach(x => x.setAttribute("aria-selected", x === b));
     const t = S.tours[stageKey];
     $("#tsbUrl").textContent = `${t.name} · Tour Virtual 360°`;
-    if ($("iframe", stageView)) loadInline();
-    else { stageView.innerHTML = posterHTML; $("#tpName").textContent = t.name; bindPoster(); }
+    loadInline();
+    stage.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
   }));
   $("[data-tour-fs]", stage).addEventListener("click", () => {
     const f = $("iframe", stageView);
