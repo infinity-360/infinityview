@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="js-wait">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -12,6 +12,7 @@
 <link rel="canonical" href="https://infinityview360.com.br/">
 <!-- Google Search Console: cole aqui a meta de verificação -->
 <!-- <meta name="google-site-verification" content="SEU_CODIGO"> -->
+
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Infinity 360">
@@ -25,414 +26,626 @@
 <meta name="twitter:title" content="Infinity 360 | Expanda sua visão">
 <meta name="twitter:description" content="Tour virtual 360°, drone, Google Meu Negócio e vídeos institucionais.">
 <meta name="twitter:image" content="https://infinityview360.com.br/og-infinity360.jpg">
+
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" as="image" href="decolagem-00.webp" fetchpriority="high">
-<style>html.js-wait{background:#04060a}html.js-wait body{opacity:0}body{transition:opacity .6s cubic-bezier(.16,1,.3,1)}</style>
-<script>
-  document.documentElement.classList.add('js-wait');
-  setTimeout(function () { document.documentElement.classList.remove('js-wait'); }, 4000);
-</script>
+<link rel="preload" href="poppins-medium.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="inter-regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" as="image" href="pano-360.jpg">
+<link rel="stylesheet" href="style.css">
+
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Infinity 360","slogan":"Expanda sua visão","url":"https://infinityview360.com.br/","image":"https://infinityview360.com.br/og-infinity360.jpg","telephone":"+55 44 99975-0719","email":"infinity360tour@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Av. Jaboti, 230 - Jardim Menegazzo","addressLocality":"Apucarana","addressRegion":"PR","postalCode":"86802-000","addressCountry":"BR"},"areaServed":"Apucarana-PR e região"}
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://infinityview360.com.br/#empresa",
+  "name": "Infinity 360",
+  "slogan": "Expanda sua visão",
+  "description": "Tour virtual 360°, captação aérea com drone, Google Meu Negócio, vídeos institucionais e sites profissionais.",
+  "url": "https://infinityview360.com.br/",
+  "logo": "https://infinityview360.com.br/icon-512.png",
+  "image": "https://infinityview360.com.br/og-infinity360.jpg",
+  "telephone": "+55-44-99975-0719",
+  "email": "infinity360tour@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Jaboti, 230 - Jardim Menegazzo",
+    "addressLocality": "Apucarana",
+    "addressRegion": "PR",
+    "postalCode": "86802-000",
+    "addressCountry": "BR"
+  },
+  "hasMap": "https://www.google.com/maps/place/Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000/data=!4m2!3m1!1s0x94ec9bd5d1fe7471:0xfb6362aaf8f8b214",
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tour Virtual 360°"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Captação aérea com drone"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Google Meu Negócio"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vídeos institucionais"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sites e landing pages"}}
+  ]
+}
 </script>
-  <script type="module" crossorigin src="./main-CTeXQQ3c.js"></script>
-  <link rel="stylesheet" crossorigin href="./style-CpPH7Kas.css">
 </head>
-<body>
+<body class="is-loading">
+
+<!-- Ícones (sprite) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M2.5 8h10.5M8.8 3.7 13 8l-4.2 4.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.3 21.8l4.9-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.2-.3-.3-.5-.4Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.5 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-360" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><ellipse cx="12" cy="13" rx="9.5" ry="4"/><path d="M12 3v6M9 6l3-3 3 3"/><path d="m16 17.5 2 .6-1 1.7"/></g></symbol>
+  <symbol id="i-drone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 6h6M16 6h6M5 6v2h14V6M9 8l-1 3h8l-1-3"/><circle cx="12" cy="14" r="2.3"/><path d="M8 11l-2 6M16 11l2 6"/></g></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 9v11h16V9M3 4h18l1 5H2l1-5Z"/><path d="M14.5 15.5a2.5 2.5 0 1 1-.8-1.9M12 15.5h2.5"/></g></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></g></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M2.5 8.5h19M6 6.3h.01M8.5 6.3h.01M7 13l-2 2 2 2M17 13l2 2-2 2M13.5 12l-3 6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></g></symbol>
+  <symbol id="i-street" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="5" r="2.5"/><path d="M9 21v-6l-1-1v-4h8v4l-1 1v6"/><path d="M4 17c-1.3.5-2 1.1-2 1.7C2 20.5 6.5 22 12 22s10-1.5 10-3.3c0-.6-.7-1.2-2-1.7"/></g></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v11H3V8Z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2"/></g></symbol>
+  <symbol id="i-brand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5 14.6 8l6 .7-4.5 4 1.3 6-5.4-3-5.4 3 1.3-6-4.5-4 6-.7L12 2.5Z"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13.5h5"/></g></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></g></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Zm4 4a4 4 0 0 1 0 6m3-9a8 8 0 0 1 0 12"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Zm5 4 5 6m0-6-5 6"/></symbol>
 </svg>
 
-<!-- ===================== NAV ===================== -->
-<nav class="nav is-hidden is-still" aria-label="Navegação principal">
-  <a class="nav__brand" href="#voo" aria-label="Infinity 360 — início"><img src="logo-symbol.png" alt="" width="498" height="235"></a>
-  <a href="#voo" data-nav="voo"><span class="roll" data-t="Drone"><span>Drone</span></span></a>
-  <a href="#sobre" data-nav="sobre"><span class="roll" data-t="Sobre"><span>Sobre</span></span></a>
-  <a href="#servicos" data-nav="servicos"><span class="roll" data-t="Serviços"><span>Serviços</span></span></a>
-  <a href="#tour" data-nav="tour"><span class="roll" data-t="Tour 360°"><span>Tour 360°</span></span></a>
-  <a href="#sites" data-nav="sites"><span class="roll" data-t="Sites"><span>Sites</span></span></a>
-  <a href="#contato" data-nav="contato"><span class="roll" data-t="Contato"><span>Contato</span></span></a>
-</nav>
+<!-- ===================== INTRO / ANIMAÇÃO DA LOGO ===================== -->
+<div id="intro" aria-hidden="true">
+  <div class="intro-grid"></div>
+  <div class="intro-stage">
+    <div class="intro-mark">
+      <svg class="intro-orbit" viewBox="0 0 400 240" preserveAspectRatio="none"><defs><linearGradient id="og" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".6" stop-color="#1BA6FF"/><stop offset="1" stop-color="#7fd0ff"/></linearGradient></defs><ellipse cx="200" cy="128" rx="186" ry="74" transform="rotate(-18 200 128)" fill="none" stroke="url(#og)" stroke-width="3" pathLength="1"/></svg>
+      <img class="intro-n" src="logo-n.png" alt="" width="388" height="234">
+      <img class="intro-focus" src="logo-focus.png" alt="" width="90" height="84">
+      <span class="intro-flare"></span>
+    </div>
+    <div class="intro-word"><img src="logo-wordmark.png" alt="" width="1064" height="130"></div>
+    <div class="intro-load"><i></i></div>
+  </div>
+  <button class="intro-skip" type="button">Pular intro</button>
+</div>
 
-<main class="page">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- ===================== 01–02 PALCO ===================== -->
-<section class="stage" id="voo" aria-label="Captação aérea com drone">
-  <div class="stage__pin">
-    <div class="stage__world"><canvas class="stage__take" aria-hidden="true"></canvas><div class="stage__dim"></div></div>
-    <div class="stage__shade" aria-hidden="true"></div>
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="topo">
+  <div class="header-in">
+    <a href="#inicio" class="brand" aria-label="Infinity 360 — início">
+      <img src="logo-horizontal.png" alt="Infinity 360 — Expanda sua visão" width="517" height="97">
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#experiencia">Tour 360°</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#sites">Sites</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#contato" class="btn btn-primary btn-sm" data-service="">Solicitar orçamento</a>
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="scroll-progress"><i></i></div>
+</header>
 
-    <div class="hero">
-      <h1 class="sr">Infinity 360 — tour virtual 360°, captação aérea com drone, Google Meu Negócio, vídeos e sites em Apucarana-PR</h1>
-      <div class="wordmark hero__word" aria-hidden="true"><span class="wm__l"><span>I</span></span><span class="wm__l"><span>n</span></span><span class="wm__l"><span>f</span></span><span class="wm__l"><span>i</span></span><span class="wm__l"><span>n</span></span><span class="wm__l"><span>i</span></span><span class="wm__l"><span>t</span></span><span class="wm__l"><span>y</span></span><span class="wm__sup"><span>360</span></span></div>
-      <div class="hero__aside">
-        <p class="hero__p" data-split>Tour virtual 360°, drone em 4K,<br>Google Meu Negócio, vídeos e sites.<br>Apucarana-PR e região.</p>
-        <a href="#voo" class="pill hero__pill" data-autopilot><span class="roll" data-t="Ver o voo"><span>Ver o voo</span></span><span class="pill__arrow"><svg><use href="#i-arrow"/></svg></span></a>
+<div class="menu-mobile" id="menu-mobile" hidden>
+  <nav aria-label="Menu mobile">
+    <a href="#sobre"><small>01</small>Sobre</a>
+    <a href="#servicos"><small>02</small>Serviços</a>
+    <a href="#experiencia"><small>03</small>Tour 360°</a>
+    <a href="#portfolio"><small>04</small>Portfólio</a>
+    <a href="#sites"><small>05</small>Sites</a>
+    <a href="#processo"><small>06</small>Como funciona</a>
+    <a href="#contato"><small>07</small>Contato</a>
+  </nav>
+  <a class="btn btn-wa btn-block" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+</div>
+
+<main id="conteudo">
+
+<!-- ===================== 01 HERO ===================== -->
+<section class="hero" id="inicio" aria-label="Apresentação">
+  <div class="hero-pano" id="heroPano" aria-hidden="true">
+    <canvas id="panoCanvas"></canvas>
+    <img class="pano-fallback" src="pano-360.jpg" alt="">
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+
+  <div class="container hero-in">
+    <div class="hero-copy">
+      <p class="kicker hero-anim"><span class="dot"></span>Tour virtual · Drone · Google · Vídeo</p>
+      <h1 class="hero-title">
+        <span class="line"><span>Seu negócio,</span></span>
+        <span class="line"><span>visto por <em>todos</em></span></span>
+        <span class="line"><span>os <em class="grad">ângulos.</em></span></span>
+      </h1>
+      <p class="hero-sub hero-anim">Tour virtual 360°, captação aérea com drone, Google Meu Negócio e vídeos institucionais para empresas que querem ser encontradas, visitadas e escolhidas — antes mesmo da primeira visita.</p>
+      <div class="hero-actions hero-anim">
+        <a href="#contato" class="btn btn-primary btn-lg magnetic">Solicitar orçamento <svg><use href="#i-arrow"/></svg></a>
+        <a href="#servicos" class="btn btn-ghost btn-lg">Conhecer os serviços <svg><use href="#i-arrow"/></svg></a>
       </div>
-      <div class="hero__cue mono" aria-hidden="true"><span>Role para voar</span><i></i></div>
+      <p class="hero-hint hero-anim"><svg><use href="#i-360"/></svg> Arraste o fundo para girar em 360°</p>
     </div>
 
-    <div class="alt" aria-hidden="true">
-      <div class="alt__ruler"><div class="alt__track"></div></div>
-      <span class="alt__mark"></span>
-      <div class="alt__read"><span class="mono">Altitude</span><b class="alt__v">000 m</b><span class="mono alt__t">T+00,0 s</span></div>
-    </div>
-
-    <div class="beat beat--foot" data-beat="A">
-      <p class="lbl mono"><span data-split>01 — Decolagem</span></p>
-      <h2 class="h-video" data-split>Seu negócio,<br>visto de cima.</h2>
-      <p class="beat__p" data-split>Fotos e vídeos aéreos em 4K de fachadas, imóveis, indústrias, obras e eventos.</p>
-    </div>
-    <div class="beat beat--foot" data-beat="B">
-      <p class="lbl mono"><span data-split>01 — Subida</span></p>
-      <h2 class="h-video" data-split>Ângulos que o chão<br>não alcança.</h2>
-      <p class="beat__p" data-split>Planejamos o voo conforme o horário e a luz, para valorizar a estrutura, a localização e o entorno.</p>
-    </div>
-    <div class="beat beat--foot" data-beat="C">
-      <p class="lbl mono"><span data-split>01 — 120 metros</span></p>
-      <h2 class="h-video" data-split>A localização inteira<br>cabe num quadro só.</h2>
-    </div>
-
-    <div class="ctrl" aria-hidden="true">
-      <div class="ctrl__body"><i class="ctrl__stick ctrl__stick--l"></i><i class="ctrl__stick ctrl__stick--r"></i></div>
-      <div class="ctrl__screen">
-        <canvas class="stage__len"></canvas>
-        <div class="hud">
-          <i class="hud__c hud__c--tl"></i><i class="hud__c hud__c--tr"></i><i class="hud__c hud__c--bl"></i><i class="hud__c hud__c--br"></i>
-          <p class="hud__rec mono"><i></i>REC <b class="hud__time">00:41</b></p>
-          <p class="hud__tr mono">4K 60 · ISO 100 · 1/120</p>
-          <div class="hud__aim"><i class="hud__hz"></i><i class="hud__ring"></i></div>
-          <p class="hud__bl mono">ALT <b class="hud__alt">120</b> m<span class="hud__dist"> · DIST <b class="hud__d">1,2</b> km</span></p>
-          <p class="hud__br mono"><span class="hud__batw">Bateria </span><b class="hud__bat">71</b>% <i class="hud__batt"><i></i></i></p>
-          <i class="hud__bar"><i></i></i>
-        </div>
+    <aside class="tour-card hero-anim" aria-label="Projetos em destaque" data-tour-card>
+      <span class="tour-card-tag"><i></i>Explore um projeto real</span>
+      <div class="tour-switch" role="tablist" aria-label="Escolha um tour">
+        <button type="button" role="tab" aria-selected="true" data-tour-key="faz-bem">Restaurante Faz Bem</button>
       </div>
-    </div>
-
-    <div class="beat beat--center" data-beat="D">
-      <p class="lbl mono"><span data-split>02 — Ao vivo</span></p>
-      <p class="beat__p" data-split>O que o drone filma chega na tela do controle, em 4K.</p>
-    </div>
-    <div class="beat beat--left" data-beat="E">
-      <p class="lbl mono"><span data-split>02 — O que ele vê</span></p>
-      <h2 class="h-video" data-split>Dimensão, entorno<br>e localização<br>num plano só.</h2>
-    </div>
-    <div class="beat beat--left" data-beat="F">
-      <p class="lbl mono"><span data-split>02 — Pronto para usar</span></p>
-      <h2 class="h-video" data-split>Para o site,<br>os Reels<br>e os anúncios.</h2>
-      <p class="beat__p" data-split>Edição com trilha e cortes, na vertical e na horizontal, entregue pronta para divulgar.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 03 SOBRE ===================== -->
-<section class="spec light" id="sobre">
-  <svg class="dune" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 140V92C120 70 210 40 330 34c150-8 250 50 410 58 170 9 250-56 420-62 120-4 200 26 280 46v72Z"/></svg>
-  <div class="spec__grid">
-    <div class="spec__media">
-      <div class="spec__sticky">
-        <figure class="spec__fig"><img src="drone-controle-4k.webp" alt="Controle do drone da Infinity 360 exibindo captação aérea em 4K 60fps" width="1000" height="1252" loading="lazy"></figure>
-        <span class="spec__seal mono">Controle com tela · 4K 60 qps</span>
-      </div>
-    </div>
-    <div class="spec__copy">
-      <p class="lbl mono" data-reveal><span data-split>03 — Sobre a Infinity 360</span></p>
-      <h2 class="h-spec" data-split data-reveal>Expanda sua visão.<br>E a do seu cliente.</h2>
-      <p class="spec__lead" data-split data-reveal>A Infinity 360 nasceu em Apucarana-PR para levar empresas a um novo nível de presença digital. Unimos captação imersiva, imagens aéreas e estratégia no Google para que o seu cliente conheça, confie e decida antes mesmo de sair de casa.</p>
-      <p class="spec__p" data-split data-reveal>Hoje, a primeira visita acontece na tela do celular. Por isso mostramos o seu espaço como ele é: com nitidez, imersão e a identidade da sua marca em cada detalhe.</p>
-      <ul class="spec__rows">
-        <li class="spec__row"><div class="rule"></div><div class="spec__in"><p class="spec__num"><span class="odo" data-odo="360°">360°</span></p><p class="spec__txt"><b>Imersão real.</b> O cliente caminha pelo seu espaço no celular, no computador ou em óculos VR.</p></div></li>
-        <li class="spec__row"><div class="rule"></div><div class="spec__in"><p class="spec__num"><span class="odo" data-odo="4K 60">4K 60</span></p><p class="spec__txt"><b>Visão aérea.</b> Drone e estabilizadores profissionais para imagens que impressionam.</p></div></li>
-        <li class="spec__row"><div class="rule"></div><div class="spec__in"><p class="spec__num"><span class="odo" data-odo="08">08</span><span class="spec__u">sites</span></p><p class="spec__txt"><b>No ar.</b> Projetos publicados e funcionando em Apucarana, Maringá e Londrina.</p></div></li>
-      </ul>
-      <p class="mono spec__foot">Google Maps · Street View · Óculos VR · Atendimento direto</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 04 EQUIPAMENTO (ABRE) ===================== -->
-<section class="unfold" id="equipamento" aria-label="Equipamento">
-  <div class="unfold__pin">
-    <canvas class="unfold__cv" aria-hidden="true"></canvas>
-    <div class="unfold__shade" aria-hidden="true"></div>
-    <div class="beat beat--foot" data-beat="A">
-      <p class="lbl mono"><span data-split>04 — Na mala</span></p>
-      <h2 class="h-video" data-split>Tira da mochila,<br>abre os braços.</h2>
-      <p class="beat__p" data-split>Vamos até o seu negócio com o drone DJI Mini 5 Pro, a Insta360 X5, a Canon EOS M50 Mark II e microfone sem fio.</p>
-    </div>
-    <div class="beat beat--foot" data-beat="B">
-      <p class="lbl mono"><span data-split>04 — Plano de voo</span></p>
-      <h2 class="h-video" data-split>Roteiro, horário<br>e luz definidos antes.</h2>
-      <p class="beat__p" data-split>Cada voo é planejado para valorizar a estrutura, a localização e os pontos fortes do seu projeto.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 05 CÂMERA ===================== -->
-<section class="cam" aria-label="Câmera estabilizada">
-  <div class="cam__pin">
-    <div class="cam__head">
-      <p class="lbl mono cam__lbl" data-reveal><span data-split>05 — Equipamento</span></p>
-      <h2 class="h-sec" data-split data-reveal>Imagem firme.<br>Som limpo.</h2>
-      <p class="cam__p" data-split data-reveal>Drone com gimbal de 3 eixos, câmeras estabilizadas e microfone sem fio. Em cima de um prédio ou dentro de uma loja, a imagem chega reta e o áudio chega sem ruído.</p>
-    </div>
-    <div class="gimbal" aria-hidden="true">
-      <div class="gimbal__rail">
-        <span class="gimbal__axis"></span>
-        <img class="gimbal__part" data-part="1" src="gimbal-1.webp" alt="" width="291" height="350">
-        <img class="gimbal__part" data-part="2" src="gimbal-2.webp" alt="" width="394" height="350">
-        <img class="gimbal__part" data-part="3" src="gimbal-3.webp" alt="" width="514" height="350">
-        <img class="gimbal__part" data-part="4" src="gimbal-4.webp" alt="" width="422" height="350">
-        <div class="gimbal__tag" data-part="1"><i></i><p class="mono"><b>01 Lente</b><span>4K a 60 qps</span></p></div>
-        <div class="gimbal__tag" data-part="2"><i></i><p class="mono"><b>02 Sensor</b><span>cores fiéis</span></p></div>
-        <div class="gimbal__tag" data-part="3"><i></i><p class="mono"><b>03 Gimbal</b><span>3 eixos</span></p></div>
-        <div class="gimbal__tag" data-part="4"><i></i><p class="mono"><b>04 Base</b><span>amortecida</span></p></div>
-      </div>
-    </div>
-    <p class="mono gimbal__read">Eixo da lente · <b>0,0°</b></p>
-  </div>
-  <div class="kit">
-    <div class="kit__head">
-      <p class="lbl mono" data-reveal><span data-split>05 — O que vai na mala</span></p>
-      <h2 class="h-spec" data-split data-reveal>Um equipamento<br>para cada ângulo.</h2>
-    </div>
-    <ol class="kit__list">
-      <li class="kit__row"><div class="rule"></div><span class="kit__n mono">01</span><div class="kit__name"><p class="mono kit__type">Drone</p><h3>DJI Mini 5 Pro</h3></div><p class="kit__spec">Sensor de 1 polegada e 50 MP, vídeo 4K a 60 qps em HDR e até 36 minutos de voo.</p><p class="kit__use mono">Captação aérea<br>fotos e vídeos</p></li>
-      <li class="kit__row"><div class="rule"></div><span class="kit__n mono">02</span><div class="kit__name"><p class="mono kit__type">Câmera 360°</p><h3>Insta360 X5</h3></div><p class="kit__spec">Vídeo 360° em 8K e fotos 360° de 72 MP: todos os ângulos de uma vez, prontos para virar tour.</p><p class="kit__use mono">Tours virtuais<br>vídeos 360°</p></li>
-      <li class="kit__row"><div class="rule"></div><span class="kit__n mono">03</span><div class="kit__name"><p class="mono kit__type">Câmera mirrorless</p><h3>Canon EOS M50 Mark II</h3></div><p class="kit__spec">Sensor APS-C de 24,1 MP, vídeo em 4K e entrada para microfone externo, para som limpo nas gravações.</p><p class="kit__use mono">Vídeos institucionais<br>fotos do espaço</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ===================== 06 SERVIÇOS ===================== -->
-<section class="svc light" id="servicos">
-  <div class="svc__grid">
-    <figure class="svc__fig">
-      <div class="svc__clip"><img class="svc__img" src="planeta-fazbem.webp" alt="" width="900" height="1404"></div>
-      <span class="svc__tag mono">Restaurante Faz Bem · Maringá-PR</span>
-    </figure>
-    <div class="svc__copy">
-      <p class="lbl mono" data-reveal><span data-split>06 — Serviços</span></p>
-      <h2 class="h-spec" data-split data-reveal>Tudo para o seu<br>negócio ser visto.</h2>
-      <div class="seg" role="tablist" aria-label="Escolha um serviço">
-        <i class="seg__ind" aria-hidden="true"></i>
-        <button role="tab" aria-selected="true" data-svc="tour">Tour 360°</button>
-        <button role="tab" aria-selected="false" data-svc="drone">Drone</button>
-        <button role="tab" aria-selected="false" data-svc="google">Google</button>
-        <button role="tab" aria-selected="false" data-svc="video">Vídeos</button>
-        <button role="tab" aria-selected="false" data-svc="site">Sites</button>
-        <button role="tab" aria-selected="false" data-svc="pacote">Pacote</button>
-      </div>
-      <div class="svc__swap" aria-live="polite">
-        <h3 class="svc__name" data-split>Tour Virtual 360°</h3>
-        <p class="svc__desc" data-split>Seu cliente entra, caminha e conhece cada ambiente pelo celular, a qualquer hora. Fotografamos tudo em 360° e montamos um tour com a sua logo, botões de contato e publicação no Google.</p>
-      </div>
-      <ul class="svc__list">
-        <li><div class="rule"></div><span>Navegação por todos os ambientes</span></li>
-        <li><div class="rule"></div><span>Menu, logo e cores da sua marca</span></li>
-        <li><div class="rule"></div><span>Integração com Google e Street View</span></li>
-      </ul>
-      <a class="btn-wide svc__btn" href="https://wa.me/5544999750719" target="_blank" rel="noopener"><span class="roll" data-t="Pedir orçamento pelo WhatsApp"><span>Pedir orçamento pelo WhatsApp</span></span><span class="pill__arrow"><svg><use href="#i-arrow"/></svg></span></a>
-      <p class="mono svc__foot">Atendimento direto · Resposta pelo WhatsApp · Apucarana-PR e região</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 07 TOUR 360° ===================== -->
-<section class="tour" id="tour" aria-label="Tour virtual 360°">
-  <canvas class="tour__pano" aria-label="Panorama 360°: arraste para girar" role="img"></canvas>
-  <div class="tour__shade" aria-hidden="true"></div>
-  <div class="tour__copy">
-    <p class="lbl mono" data-reveal><span data-split>07 — Experiência imersiva</span></p>
-    <h2 class="h-video" data-split data-reveal>Entre agora<br>em um tour real.</h2>
-    <p class="tour__p" data-split data-reveal>Escolha um projeto e navegue sem sair desta página. Arraste para olhar ao redor e explore cada ambiente.</p>
-    <div class="tour__picks">
-      <button class="tour__pick" type="button" data-tour="https://lucastows360.github.io/tour360restaurantefazbem/" data-title="Restaurante Faz Bem · Tour Virtual 360°">
-        <span class="tour__planet"><img src="planeta-fazbem.webp" alt="" width="900" height="1404" loading="lazy"></span>
-        <span class="tour__pt"><b><span class="roll" data-t="Restaurante Faz Bem"><span>Restaurante Faz Bem</span></span></b><span class="mono">Restaurante · Maringá-PR</span></span>
-      </button>
-    </div>
-  </div>
-  <div class="tour__side">
-    <p class="mono tour__hint"><i></i>Arraste para girar · <b class="tour__deg">000°</b></p>
-    <p class="tour__planetcopy"><b>Uma só foto. O mundo inteiro.</b> Cada captação 360° registra todos os ângulos de uma vez e vira tour, foto, vídeo e conteúdo que para o feed.</p>
-  </div>
-</section>
-
-<!-- ===================== 08 PORTFÓLIO ===================== -->
-<section class="reel" id="portfolio" aria-label="Portfólio">
-  <div class="reel__pin">
-    <div class="reel__track">
-      <div class="reel__head">
-        <p class="lbl mono" data-reveal><span data-split>08 — Portfólio</span></p>
-        <h2 class="h-sec" data-split data-reveal>Projetos que<br>já estão no ar.</h2>
-        <p class="reel__p" data-split data-reveal>Toque para abrir aqui mesmo: tours navegáveis, imagens aéreas e vídeos.</p>
-      </div>
-      <button class="reel__item" type="button" data-video="drone-industria.mp4" data-title="Captação aérea — indústria">
-        <span class="reel__media"><img src="poster-drone-industria.webp" alt="Imagem aérea de indústria feita com drone" width="540" height="960" loading="lazy"><video muted loop playsinline preload="none"></video><i class="reel__play"></i></span>
-        <span class="mono reel__cat">Drone</span><b class="reel__t">Captação aérea industrial</b><span class="reel__s">Vídeo vertical em alta definição</span>
-      </button>
-      <button class="reel__item" type="button" data-video="video-imobiliario.mp4" data-title="Vídeo imobiliário">
-        <span class="reel__media"><img src="poster-video-imobiliario.webp" alt="Cena de vídeo imobiliário" width="540" height="960" loading="lazy"><video muted loop playsinline preload="none"></video><i class="reel__play"></i></span>
-        <span class="mono reel__cat">Vídeo comercial</span><b class="reel__t">Vídeo imobiliário</b><span class="reel__s">Aéreo + interno com motion</span>
-      </button>
-      <button class="reel__item" type="button" data-video="aereo-cidade.mp4" data-title="Captação aérea — cidade e obras">
-        <span class="reel__media"><img src="poster-aereo-cidade.webp" alt="Imagem aérea da cidade" width="540" height="960" loading="lazy"><video muted loop playsinline preload="none"></video><i class="reel__play"></i></span>
-        <span class="mono reel__cat">Drone</span><b class="reel__t">Cidade e obras</b><span class="reel__s">Acompanhamento aéreo</span>
-      </button>
-    </div>
-    <div class="reel__bar" aria-hidden="true"><i></i></div>
-  </div>
-</section>
-
-<!-- ===================== 09 SITES ===================== -->
-<section class="sites light" id="sites">
-  <div class="sites__head">
-    <p class="lbl mono" data-reveal><span data-split>09 — Desenvolvimento de sites</span></p>
-    <h2 class="h-sec" data-split data-reveal>Sites que trabalham<br>pelo seu negócio.</h2>
-    <p class="sites__p" data-split data-reveal>Projetos publicados e funcionando. Escolha um site na lista e navegue por ele aqui mesmo, no computador e no celular.</p>
-  </div>
-  <div class="sites__grid">
-    <ol class="sites__list" role="tablist" aria-label="Projetos de sites">
-      <li><button class="site" type="button" role="tab" aria-selected="true" data-url="https://infinity-360.github.io/restaurantefazbem/" data-title="Faz Bem Restaurante" data-meta="Restaurante e marmitaria · Maringá-PR"><div class="rule"></div><span class="site__n mono">01</span><span class="site__txt"><span class="site__name">Faz Bem Restaurante</span><span class="site__meta mono">Restaurante e marmitaria · Maringá-PR</span><span class="site__tags">Vídeo controlado pela rolagem · Pedidos pelo iFood e WhatsApp · Tour 360° integrado</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/alcaida-site/" data-title="Alcaida Academia" data-meta="Academia + loja fitness · Apucarana-PR"><div class="rule"></div><span class="site__n mono">02</span><span class="site__txt"><span class="site__name">Alcaida Academia</span><span class="site__meta mono">Academia + loja fitness · Apucarana-PR</span><span class="site__tags">Vídeo controlado pela rolagem · Loja Alcaida Fitstyle integrada</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/r4sports-site/" data-title="Academia R4 Sports" data-meta="Academia e assessoria esportiva · Apucarana-PR"><div class="rule"></div><span class="site__n mono">03</span><span class="site__txt"><span class="site__name">Academia R4 Sports</span><span class="site__meta mono">Academia e assessoria esportiva · Apucarana-PR</span><span class="site__tags">Musculação, funcional, spinning e corrida · Contato direto pelo WhatsApp</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/workoutacademiaap/" data-title="Workout Academia" data-meta="Academia · Paraná"><div class="rule"></div><span class="site__n mono">04</span><span class="site__txt"><span class="site__name">Workout Academia</span><span class="site__meta mono">Academia · Paraná</span><span class="site__tags">Tour virtual 360° na capa · Musculação orientada</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/garage35site/" data-title="Garage 35 Auto Center" data-meta="Oficina mecânica · Apucarana-PR"><div class="rule"></div><span class="site__n mono">05</span><span class="site__txt"><span class="site__name">Garage 35 Auto Center</span><span class="site__meta mono">Oficina mecânica · Apucarana-PR</span><span class="site__tags">Tour virtual 360° na capa · Orçamento pelo WhatsApp</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/barbeariahudson/" data-title="Hudson Barbearia" data-meta="Barbearia por assinatura · Apucarana-PR"><div class="rule"></div><span class="site__n mono">06</span><span class="site__txt"><span class="site__name">Hudson Barbearia</span><span class="site__meta mono">Barbearia por assinatura · Apucarana-PR</span><span class="site__tags">Planos de assinatura em destaque · Localização e contato</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/criative-cv/" data-title="Criative Comunicação Visual" data-meta="Comunicação visual · Apucarana-PR"><div class="rule"></div><span class="site__n mono">07</span><span class="site__txt"><span class="site__name">Criative Comunicação Visual</span><span class="site__meta mono">Comunicação visual · Apucarana-PR</span><span class="site__tags">Catálogo de serviços · Orçamento pelo WhatsApp</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-      <li><button class="site" type="button" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/lashescamilabeatriz-site/" data-title="Camila Beatriz Lashes" data-meta="Studio de beleza · Londrina-PR"><div class="rule"></div><span class="site__n mono">08</span><span class="site__txt"><span class="site__name">Camila Beatriz Lashes</span><span class="site__meta mono">Studio de beleza · Londrina-PR</span><span class="site__tags">Tour 360° do studio · Agendamento pelo WhatsApp</span></span><span class="site__dot" aria-hidden="true"></span></button></li>
-    </ol>
-    <div class="sites__view">
-      <div class="sites__sticky">
-        <div class="wd">
-          <div class="wd__desk">
-            <div class="wd__bar"><span class="wd__dots"><i></i><i></i><i></i></span><span class="wd__url mono">infinity-360.github.io/restaurantefazbem/</span><span class="wd__acts"><button class="wd__btn" type="button" data-wd-full>Tela cheia</button><a class="wd__btn" data-wd-ext href="https://infinity-360.github.io/restaurantefazbem/" target="_blank" rel="noopener">Nova aba</a></span></div>
-            <div class="wd__screen" data-w="1440" data-lenis-prevent><span class="wd__load mono">Carregando o site…</span></div>
+      <div class="tour-card-frame">
+        <div class="tour-card-preview" data-tour-preview>
+          <div class="tsp-pano" aria-hidden="true"></div>
+          <div class="tour-card-glass">
+            <span class="badge-360">Tour virtual 360°</span>
+            <p class="eyebrow">Uma experiência imersiva</p>
+            <h2>Explore <span data-tf="name">Restaurante Faz Bem</span> <em>em 360°</em></h2>
+            <p class="tour-card-desc" data-tf="desc">Da calçada ao salão: conheça o restaurante por dentro antes mesmo de chegar.</p>
+            <div class="tour-card-stats"><span>Navegue pelo celular ou computador</span></div>
           </div>
-          <div class="wd__phone"><div class="wd__screen" data-w="390" data-lenis-prevent><span class="wd__load mono">Carregando…</span></div></div>
+          <div class="tour-ring" aria-hidden="true"><img data-tf="img" src="planeta-fazbem.webp" alt=""></div>
         </div>
-        <p class="wd__hint mono"><i></i>Role e clique dentro das telas: o site está no ar</p>
-        <button class="pill pill--dark wd__mbtn" type="button" data-wd-full><span class="roll" data-t="Abrir em tela cheia"><span>Abrir em tela cheia</span></span><span class="pill__arrow"><svg><use href="#i-arrow"/></svg></span></button>
+        <button class="tour-card-btn" type="button" data-open-tour="faz-bem">Entrar neste tour <svg><use href="#i-arrow"/></svg></button>
       </div>
-    </div>
+      <div class="tour-card-foot">
+        <div><strong data-tf="nameUp">RESTAURANTE FAZ BEM</strong><span data-tf="place">Maringá · PR</span></div>
+        <span class="pill-360">360°</span>
+      </div>
+    </aside>
   </div>
-  <div class="sites__cta">
-    <div class="rule"></div>
-    <p class="sites__ctat" data-split data-reveal>O próximo site pode ser o seu. Design exclusivo, rápido no celular, com tour 360°, vídeos e botões que levam direto ao seu WhatsApp.</p>
-    <a class="pill pill--dark" href="#contato" data-service="Site profissional"><span class="roll" data-t="Quero um site assim"><span>Quero um site assim</span></span><span class="pill__arrow"><svg><use href="#i-arrow"/></svg></span></a>
-  </div>
+
+  <a href="#sobre" class="scroll-cue" aria-label="Rolar para a próxima seção"><span></span></a>
 </section>
 
-<!-- ===================== 10 COMO FUNCIONA ===================== -->
-<section class="proc" id="processo">
-  <div class="proc__grid">
-    <div class="proc__side">
-      <div class="proc__sticky">
-        <p class="lbl mono" data-reveal><span data-split>10 — Como funciona</span></p>
-        <h2 class="h-spec" data-split data-reveal>Do primeiro contato<br>à publicação.</h2>
-        <p class="proc__p" data-split data-reveal>Um processo simples e transparente, para você saber o que acontece em cada etapa.</p>
-      </div>
-    </div>
-    <div class="proc__main">
-      <span class="proc__line" aria-hidden="true"><i></i></span>
-      <ol class="proc__steps">
-        <li class="proc__step"><span class="proc__dot"></span><p class="mono proc__n">01</p><h3 data-split data-reveal>Primeiro contato</h3><p data-split data-reveal>Você chama no WhatsApp ou pelo formulário e conta sobre o seu negócio.</p></li>
-        <li class="proc__step"><span class="proc__dot"></span><p class="mono proc__n">02</p><h3 data-split data-reveal>Entendimento</h3><p data-split data-reveal>Entendemos seus objetivos, ambientes, público e onde as imagens serão usadas.</p></li>
-        <li class="proc__step"><span class="proc__dot"></span><p class="mono proc__n">03</p><h3 data-split data-reveal>Planejamento</h3><p data-split data-reveal>Definimos o roteiro de captação, os pontos 360°, o plano de voo e a melhor data.</p></li>
-        <li class="proc__step"><span class="proc__dot"></span><p class="mono proc__n">04</p><h3 data-split data-reveal>Captação e produção</h3><p data-split data-reveal>Captamos no local e produzimos o tour, os vídeos, as fotos ou o site.</p></li>
-        <li class="proc__step"><span class="proc__dot"></span><p class="mono proc__n">05</p><h3 data-split data-reveal>Entrega e acompanhamento</h3><p data-split data-reveal>Publicamos no Google, entregamos links e arquivos e seguimos ao seu lado.</p></li>
-      </ol>
-      <div class="why">
-        <p class="lbl mono" data-reveal><span data-split>Por que a Infinity 360</span></p>
-        <ul class="why__list">
-          <li><div class="rule"></div><b>Integração com o Google</b><span>Seu tour no Google Maps e no Street View, onde o cliente já está procurando.</span></li>
-          <li><div class="rule"></div><b>Equipamentos profissionais</b><span>DJI Mini 5 Pro, Insta360 X5, Canon EOS M50 Mark II e microfone sem fio para áudio limpo.</span></li>
-          <li><div class="rule"></div><b>A sua marca em destaque</b><span>Tours e sites com a sua logo, as suas cores e os seus botões de contato.</span></li>
-          <li><div class="rule"></div><b>Feito para o celular</b><span>Leve e fluido no smartphone, no computador e em óculos de realidade virtual.</span></li>
-          <li><div class="rule"></div><b>Pronto para divulgar</b><span>Links e arquivos prontos para site, Instagram, WhatsApp, anúncios e QR Code.</span></li>
-          <li><div class="rule"></div><b>Atendimento direto</b><span>Você fala com quem planeja e executa o projeto, do primeiro contato à entrega.</span></li>
-        </ul>
-      </div>
-    </div>
+<!-- Faixa de serviços -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span><img src="ico-0.png" alt="">Tour virtual 360°</span><span><img src="ico-1.png" alt="">Captação aérea com drone</span><span><img src="ico-2.png" alt="">Google Meu Negócio</span><span><img src="ico-3.png" alt="">Vídeos institucionais</span><span><svg><use href="#i-web"/></svg>Sites profissionais</span><span><svg><use href="#i-street"/></svg>Integração com Street View</span>
+    <span><img src="ico-0.png" alt="">Tour virtual 360°</span><span><img src="ico-1.png" alt="">Captação aérea com drone</span><span><img src="ico-2.png" alt="">Google Meu Negócio</span><span><img src="ico-3.png" alt="">Vídeos institucionais</span><span><svg><use href="#i-web"/></svg>Sites profissionais</span><span><svg><use href="#i-street"/></svg>Integração com Street View</span>
   </div>
-</section>
+</div>
 
-<!-- ===================== 11 CONTATO ===================== -->
-<section class="contact light" id="contato">
-  <div class="contact__grid">
-    <div class="contact__copy">
-      <p class="lbl mono" data-reveal><span data-split>11 — Contato e orçamento</span></p>
-      <h2 class="h-spec" data-split data-reveal>Vamos tirar o seu<br>projeto do chão.</h2>
-      <p class="contact__p" data-split data-reveal>Preencha os dados e a sua mensagem chega pronta no nosso WhatsApp comercial.</p>
-      <ul class="contact__list">
-        <li><div class="rule"></div><a href="https://wa.me/5544999750719" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b><span class="roll" data-t="(44) 99975-0719"><span>(44) 99975-0719</span></span></b></a></li>
-        <li><div class="rule"></div><a href="mailto:infinity360tour@gmail.com"><span class="mono">E-mail</span><b><span class="roll" data-t="infinity360tour@gmail.com"><span>infinity360tour@gmail.com</span></span></b></a></li>
-        <li><div class="rule"></div><a href="https://www.google.com/maps/place/Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000/data=!4m2!3m1!1s0x94ec9bd5d1fe7471:0xfb6362aaf8f8b214" target="_blank" rel="noopener"><span class="mono">Endereço</span><b>Av. Jaboti, 230 · Jardim Menegazzo<br>Apucarana-PR · 86802-000</b></a></li>
+<!-- ===================== 02 SOBRE ===================== -->
+<section class="section about" id="sobre">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <p class="kicker reveal">Sobre a Infinity 360</p>
+      <h2 class="h2 reveal">Expanda sua visão.<br><span class="muted">E a do seu cliente também.</span></h2>
+      <p class="lead reveal">A Infinity 360 nasceu em Apucarana-PR para levar empresas a um novo nível de presença digital. Unimos tecnologia de captação imersiva, imagens aéreas e estratégia no Google para que o seu cliente conheça, confie e decida — antes mesmo de sair de casa.</p>
+      <p class="reveal">Hoje, a primeira visita acontece na tela do celular. Por isso, criamos experiências que mostram o seu espaço como ele realmente é: com nitidez, imersão e a identidade da sua marca em cada detalhe.</p>
+      <ul class="about-pillars">
+        <li class="reveal"><svg><use href="#i-360"/></svg><div><strong>Imersão real</strong><span>O cliente caminha pelo seu espaço em 360°, no celular, computador ou óculos VR.</span></div></li>
+        <li class="reveal"><svg><use href="#i-store"/></svg><div><strong>Presença no Google</strong><span>Perfil otimizado e tour integrado ao Google Maps e Street View.</span></div></li>
+        <li class="reveal"><svg><use href="#i-drone"/></svg><div><strong>Visão aérea</strong><span>Drone e estabilizadores profissionais para imagens que impressionam.</span></div></li>
       </ul>
-      <div class="contact__map"><iframe title="Mapa: Infinity 360 em Apucarana-PR" src="https://www.google.com/maps?q=Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
-    <form class="form" id="leadForm" novalidate>
-      <p class="mono form__head">Solicite seu orçamento · resposta pelo WhatsApp</p>
-      <label class="field"><span class="field__l">Nome</span><input name="nome" type="text" autocomplete="name" required minlength="2"><span class="field__e">Informe o seu nome.</span></label>
-      <div class="field-row">
-        <label class="field"><span class="field__l">WhatsApp</span><input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required><span class="field__e">Informe um WhatsApp com DDD.</span></label>
-        <label class="field"><span class="field__l">E-mail</span><input name="email" type="email" autocomplete="email" required><span class="field__e">Informe um e-mail válido.</span></label>
+    <div class="about-media">
+      <figure class="about-img a1 parallax" data-speed="-0.06"><img src="equipamentos-dji.webp" alt="Equipamentos de captação da Infinity 360: drone, controle com tela, câmera estabilizada e microfone sem fio" loading="lazy" width="1000" height="1196"></figure>
+      <figure class="about-img a2 parallax" data-speed="0.08"><img src="drone-controle-4k.webp" alt="Controle do drone exibindo captação aérea em 4K 60fps" loading="lazy" width="1000" height="1252"></figure>
+      <div class="about-badge parallax" data-speed="0.14"><img src="logo-symbol.png" alt="" width="498" height="235"><span>Expanda<br>sua visão</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DRONE (SCROLL) ===================== -->
+<section class="drone" id="drone" aria-label="Captação aérea com drone">
+  <div class="drone-sticky">
+    <div class="drone-bg-word" aria-hidden="true">AÉREO</div>
+    <div class="drone-hud" aria-hidden="true">
+      <span class="hud-c tl"></span><span class="hud-c tr"></span><span class="hud-c bl"></span><span class="hud-c br"></span>
+      <span class="hud-rec"><i></i>REC</span>
+      <span class="hud-res">4K · 60FPS</span>
+      <span class="hud-mode">INFINITY 360 · AERIAL</span>
+      <span class="hud-pct"><b id="dronePct">000</b>%</span>
+    </div>
+    <canvas id="droneCanvas" width="576" height="320" aria-label="Drone girando conforme a rolagem da página" role="img"></canvas>
+    <div class="drone-steps">
+      <div class="drone-step" data-step="0"><span class="num">01</span><h3>Captação aérea <em>profissional</em></h3><p>Imagens e vídeos com drone que revelam a dimensão, a localização e o potencial do seu negócio.</p></div>
+      <div class="drone-step" data-step="1"><span class="num">02</span><h3>Resolução <em>4K</em></h3><p>Captação em 4K com estabilização, nitidez e cores fiéis — pronta para site, redes sociais e anúncios.</p></div>
+      <div class="drone-step" data-step="2"><span class="num">03</span><h3>Ângulos que o chão <em>não alcança</em></h3><p>Fachadas, empreendimentos, indústrias, eventos e imóveis vistos de onde ninguém mais mostra.</p></div>
+      <div class="drone-step" data-step="3"><span class="num">04</span><h3>Pronto para <em>decolar?</em></h3><p>Conte o que você precisa e planejamos o voo ideal para o seu projeto.</p><a href="#contato" class="btn btn-primary" data-service="Captação aérea com drone">Orçar captação aérea <svg><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="drone-progress" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ===================== 03 SERVIÇOS ===================== -->
+<section class="section services" id="servicos">
+  <div class="container">
+    <div class="sec-head">
+      <p class="kicker reveal">Serviços</p>
+      <h2 class="h2 reveal">Tudo o que o seu negócio precisa para <span class="grad">ser visto</span>.</h2>
+      <p class="lead reveal">Soluções que funcionam sozinhas ou combinadas — do tour virtual ao perfil no Google, do voo de drone ao site que converte.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc-card reveal" data-svc="Tour Virtual 360°">
+        <div class="svc-media"><img src="planeta-fazbem.webp" alt="Imagem 360° em formato planeta da fachada do Restaurante Faz Bem" loading="lazy"><span class="svc-icon"><img src="ico-0.png" alt=""></span></div>
+        <div class="svc-body">
+          <h3>Tour Virtual 360°</h3>
+          <p>Seu cliente entra, caminha e conhece cada ambiente do seu espaço pelo celular, a qualquer hora.</p>
+          <ul class="svc-list"><li>Navegação por todos os ambientes</li><li>Menu, logo e cores da sua marca</li><li>Integração com Google e Street View</li></ul>
+          <button class="svc-more-btn" type="button">Saiba mais <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="svc-detail" hidden>
+          <p>O tour virtual 360° é uma visita completa e interativa ao seu estabelecimento. Fotografamos cada ambiente em 360° e montamos uma experiência navegável, com a identidade visual da sua empresa, botões de contato e informações estratégicas.</p>
+          <ul><li>Captação 360° de fachada, recepção e todos os ambientes</li><li>Menu de ambientes personalizado com a sua logo</li><li>Botões de WhatsApp, Instagram e localização dentro do tour</li><li>Compatível com celular, computador e óculos VR</li><li>Publicação no Google Maps e Street View</li><li>Link pronto para usar no site, Instagram e anúncios</li></ul>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" data-svc="Captação aérea com drone">
+        <div class="svc-media"><img src="poster-drone-industria.webp" alt="Imagem aérea feita com drone de uma indústria com estacionamento" loading="lazy"><span class="svc-icon"><img src="ico-1.png" alt=""></span></div>
+        <div class="svc-body">
+          <h3>Captação Aérea com Drone</h3>
+          <p>Fotos e vídeos aéreos em 4K que mostram a grandiosidade, a localização e o entorno do seu negócio.</p>
+          <ul class="svc-list"><li>Vídeos e fotos em 4K</li><li>Imóveis, indústrias, obras e eventos</li><li>Edição pronta para redes e site</li></ul>
+          <button class="svc-more-btn" type="button">Saiba mais <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="svc-detail" hidden>
+          <p>Imagens aéreas transformam a forma como o público enxerga um empreendimento. Planejamos cada voo para valorizar a estrutura, a localização e os pontos fortes do seu projeto.</p>
+          <ul><li>Fotos e vídeos aéreos em 4K</li><li>Ideal para imobiliárias, construtoras, indústrias, comércios e eventos</li><li>Acompanhamento de obras</li><li>Edição com trilha e cortes para Reels, site e anúncios</li><li>Planejamento do voo conforme horário e condições de luz</li></ul>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" data-svc="Google Meu Negócio">
+        <div class="svc-media"><img src="google-meu-negocio.webp" alt="Ilustração de perfil da empresa no Google com rotas, ligar e site" loading="lazy"><span class="svc-icon"><img src="ico-2.png" alt=""></span></div>
+        <div class="svc-body">
+          <h3>Google Meu Negócio</h3>
+          <p>Seu perfil completo e otimizado para aparecer quando o cliente procura o que você vende.</p>
+          <ul class="svc-list"><li>Perfil da Empresa completo</li><li>Fotos, horários e contatos</li><li>Tour 360° integrado ao perfil</li></ul>
+          <button class="svc-more-btn" type="button">Saiba mais <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="svc-detail" hidden>
+          <p>Quando alguém procura uma empresa como a sua no Google, o perfil é a primeira impressão. Deixamos o seu Perfil da Empresa completo, profissional e pronto para gerar contatos.</p>
+          <ul><li>Criação ou otimização do Perfil da Empresa no Google</li><li>Categorias, descrição, horários, contatos e localização</li><li>Fotos profissionais e tour virtual 360° no perfil</li><li>Integração com Google Maps e Street View</li><li>Mais confiança para quem pesquisa</li></ul>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" data-svc="Vídeos institucionais">
+        <div class="svc-media"><img src="poster-video-imobiliario.webp" alt="Cena de vídeo imobiliário com edifício e texto Potencial Real" loading="lazy"><span class="svc-icon"><img src="ico-3.png" alt=""></span></div>
+        <div class="svc-body">
+          <h3>Vídeos Institucionais</h3>
+          <p>Vídeos que contam a história da sua empresa, apresentam espaços e vendem com emoção.</p>
+          <ul class="svc-list"><li>Roteiro, captação e edição</li><li>Formatos para Reels e site</li><li>Combinação com imagens aéreas</li></ul>
+          <button class="svc-more-btn" type="button">Saiba mais <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="svc-detail" hidden>
+          <p>Um bom vídeo comunica em segundos o que um texto levaria páginas para explicar. Produzimos vídeos institucionais e comerciais com linguagem moderna e foco em resultado.</p>
+          <ul><li>Vídeos institucionais e de apresentação de espaços</li><li>Vídeos para imóveis e lançamentos</li><li>Versões verticais para Reels, Stories e TikTok</li><li>Imagens aéreas e de solo combinadas</li><li>Captação com câmera estabilizada e áudio sem fio</li></ul>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" data-svc="Site profissional">
+        <div class="svc-media svc-media-site">
+          <div class="mini-browser"><span class="mb-bar"><i></i><i></i><i></i></span><div class="live-thumb" data-src="https://lucastows360.github.io/garage35site/"></div></div>
+          <span class="svc-icon"><svg><use href="#i-web"/></svg></span>
+        </div>
+        <div class="svc-body">
+          <h3>Sites Profissionais</h3>
+          <p>Sites e landing pages rápidos, bonitos e focados em transformar visitas em contatos no WhatsApp.</p>
+          <ul class="svc-list"><li>Design exclusivo e responsivo</li><li>Tour 360° integrado ao site</li><li>Botões diretos para o WhatsApp</li></ul>
+          <button class="svc-more-btn" type="button">Saiba mais <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="svc-detail" hidden>
+          <p>Desenvolvemos sites e landing pages sob medida, com visual premium e estrutura pensada para conversão — perfeitos para receber o seu tour virtual e os seus vídeos.</p>
+          <ul><li>Design exclusivo com a identidade da sua marca</li><li>Funciona perfeitamente no celular</li><li>Tour virtual 360° e vídeos incorporados</li><li>Formulários e botões que levam direto ao WhatsApp</li><li>Estrutura de SEO para aparecer no Google</li></ul>
+        </div>
+      </article>
+
+      <article class="svc-card svc-card-cta reveal">
+        <img class="svc-cta-logo" src="logo-symbol.png" alt="" width="498" height="235" loading="lazy">
+        <h3>Combine e potencialize</h3>
+        <p>Site + Google Meu Negócio + Tour 360° no Street View: o pacote completo para o seu negócio ser encontrado e escolhido.</p>
+        <a href="#contato" class="btn btn-primary" data-service="Pacote completo (Site + Google + Tour 360°)">Quero o pacote completo <svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 04 DIFERENCIAIS ===================== -->
+<section class="section diffs" id="diferenciais">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="kicker reveal">Por que a Infinity 360</p>
+      <h2 class="h2 reveal">Tecnologia de ponta, <span class="grad">atenção de perto</span>.</h2>
+    </div>
+    <div class="diff-grid">
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-street"/></svg></span><h3>Integração com o Google</h3><p>Seu tour publicado no Google Maps e no Street View, onde o cliente já está procurando.</p></div>
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-cam"/></svg></span><h3>Equipamentos profissionais</h3><p>Drone com captação em 4K, câmera com estabilização e microfone sem fio para áudio limpo.</p></div>
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-brand"/></svg></span><h3>A sua marca em destaque</h3><p>Tours e sites personalizados com a sua logo, as suas cores e os seus botões de contato.</p></div>
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-phone"/></svg></span><h3>Feito para o celular</h3><p>Experiências leves e fluidas no smartphone, no computador e em óculos de realidade virtual.</p></div>
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-share"/></svg></span><h3>Pronto para divulgar</h3><p>Links e arquivos prontos para site, Instagram, WhatsApp, anúncios e QR Code.</p></div>
+      <div class="diff reveal"><span class="diff-ico"><svg><use href="#i-chat"/></svg></span><h3>Atendimento direto</h3><p>Você fala com quem planeja e executa o seu projeto, do primeiro contato à entrega.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 05 COMO FUNCIONA ===================== -->
+<section class="section process" id="processo">
+  <div class="container">
+    <div class="sec-head">
+      <p class="kicker reveal">Como funciona</p>
+      <h2 class="h2 reveal">Do primeiro contato à <span class="grad">publicação</span>.</h2>
+      <p class="lead reveal">Um processo simples e transparente, para você saber exatamente o que vai acontecer em cada etapa.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step-n">01</span><h3>Primeiro contato</h3><p>Você nos chama no WhatsApp ou pelo formulário e conta sobre o seu negócio.</p></li>
+      <li class="step reveal"><span class="step-n">02</span><h3>Entendimento</h3><p>Entendemos seus objetivos, ambientes, público e onde as imagens serão usadas.</p></li>
+      <li class="step reveal"><span class="step-n">03</span><h3>Planejamento</h3><p>Definimos roteiro de captação, pontos 360°, plano de voo e a melhor data.</p></li>
+      <li class="step reveal"><span class="step-n">04</span><h3>Captação e produção</h3><p>Captamos no local e produzimos o tour, os vídeos, as fotos ou o site.</p></li>
+      <li class="step reveal"><span class="step-n">05</span><h3>Entrega e acompanhamento</h3><p>Publicamos no Google, entregamos links e arquivos e seguimos ao seu lado.</p></li>
+    </ol>
+    <div class="steps-line" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ===================== 06 EXPERIÊNCIA / DEMONSTRAÇÕES ===================== -->
+<section class="section experience" id="experiencia">
+  <div class="container">
+    <div class="sec-head">
+      <p class="kicker reveal">Experiência imersiva</p>
+      <h2 class="h2 reveal">Entre agora em um <span class="grad">tour real</span>.</h2>
+      <p class="lead reveal">Escolha um projeto e navegue sem sair desta página. Arraste para olhar ao redor e explore cada ambiente.</p>
+    </div>
+
+    <div class="tour-switch tour-switch-lg reveal" role="tablist" aria-label="Escolha um tour" data-stage-switch>
+      <button type="button" role="tab" aria-selected="true" data-tour-key="faz-bem">Restaurante Faz Bem</button>
+    </div>
+    <div class="tour-stage reveal" id="tourStage">
+      <div class="tour-stage-bar"><span class="tsb-dots"><i></i><i></i><i></i></span><span class="tsb-url" id="tsbUrl">Restaurante Faz Bem · Tour Virtual 360°</span><button class="tsb-btn" type="button" data-tour-fs aria-label="Abrir tour em tela cheia"><svg><use href="#i-expand"/></svg></button></div>
+      <div class="tour-stage-view">
+        <div class="tour-stage-poster">
+          <div class="tsp-pano" aria-hidden="true"></div>
+          <button class="tour-play" type="button" data-load-inline><span class="tp-ring"><svg><use href="#i-360"/></svg></span><strong>Iniciar tour 360°</strong><small id="tpName">Restaurante Faz Bem</small></button>
+        </div>
       </div>
-      <label class="field"><span class="field__l">Serviço desejado</span>
-        <select name="servico" required>
-          <option value="" selected disabled>Escolha um serviço</option>
-          <option>Tour Virtual 360°</option>
-          <option>Captação aérea com drone</option>
-          <option>Google Meu Negócio</option>
-          <option>Vídeos institucionais</option>
-          <option>Site profissional</option>
-          <option>Pacote completo (Site + Google + Tour 360°)</option>
-          <option>Outro / ainda não sei</option>
-        </select><span class="field__e">Escolha um serviço.</span></label>
-      <label class="field"><span class="field__l">Descreva a sua necessidade</span><textarea name="mensagem" rows="3" required minlength="5"></textarea><span class="field__e">Conte um pouco sobre o seu projeto.</span></label>
-      <label class="consent"><input type="checkbox" name="ok" required><span>Concordo com a <a href="privacidade.html">Política de Privacidade</a> e com o envio dos meus dados pelo WhatsApp.</span></label>
-      <button class="btn-wide" type="submit"><span class="roll" data-t="Enviar pelo WhatsApp"><span>Enviar pelo WhatsApp</span></span><span class="pill__arrow"><svg><use href="#i-arrow"/></svg></span></button>
-      <p class="form__note">Ao enviar, o WhatsApp abre com a sua mensagem pronta. É só tocar em enviar.</p>
-      <p class="form__dep">Já fez um projeto com a Infinity 360? <a href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Quero%20deixar%20meu%20depoimento%20sobre%20o%20trabalho%20de%20voc%C3%AAs%3A%20" target="_blank" rel="noopener">Conte como foi</a>: a sua opinião pode aparecer aqui.</p>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-copy">
+        <h3 class="h3 reveal">Veja na prática</h3>
+        <p class="reveal">Gravações reais de projetos: tours no celular, imagens aéreas e vídeos produzidos.</p>
+        <div class="showcase-tabs" role="tablist" aria-label="Demonstrações">
+          <button role="tab" aria-selected="true" data-video="drone-industria.mp4" data-poster="poster-drone-industria.webp"><svg><use href="#i-drone"/></svg><span><strong>Captação aérea</strong><small>Drone em 4K</small></span></button>
+          <button role="tab" aria-selected="false" data-video="video-imobiliario.mp4" data-poster="poster-video-imobiliario.webp"><svg><use href="#i-play"/></svg><span><strong>Vídeo imobiliário</strong><small>Vídeo comercial</small></span></button>
+        </div>
+      </div>
+      <div class="phone reveal">
+        <div class="phone-frame">
+          <video id="showcaseVideo" src="drone-industria.mp4" poster="poster-drone-industria.webp" muted playsinline loop preload="none"></video>
+          <button class="phone-sound" type="button" aria-label="Ativar som" aria-pressed="false"><svg><use href="#i-mute"/></svg></button>
+        </div>
+        <div class="phone-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="planets">
+      <div class="planets-copy reveal"><p class="kicker">Formato planeta</p><h3 class="h3">Uma só foto. <span class="grad">O mundo inteiro.</span></h3><p>Cada captação 360° registra todos os ângulos de uma vez — e vira tour, foto, vídeo e conteúdo que para o feed.</p></div>
+      <figure class="planet reveal" data-lightbox="planeta-fazbem.webp" data-caption="Restaurante FazBem — imagem 360° em formato planeta"><img src="planeta-fazbem.webp" alt="Fachada do restaurante FazBem em imagem 360° formato planeta" loading="lazy"><figcaption>FazBem</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 07 PORTFÓLIO ===================== -->
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="sec-head">
+      <p class="kicker reveal">Portfólio</p>
+      <h2 class="h2 reveal">Projetos que <span class="grad">já estão no ar</span>.</h2>
+      <p class="lead reveal">Toque em um projeto para abrir aqui mesmo: tours navegáveis, imagens aéreas e vídeos.</p>
+    </div>
+    <div class="filters reveal" role="group" aria-label="Filtrar portfólio">
+      <button class="is-active" data-filter="all">Todos</button>
+      <button data-filter="drone">Drone</button>
+      <button data-filter="video">Vídeos</button>
+      <a class="filters-link" href="#sites">Sites <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="pf-grid" id="pfGrid">
+      <article class="pf-item pf-tall" data-cat="drone" data-video="drone-industria.mp4" data-title="Captação aérea — indústria" tabindex="0" role="button" aria-label="Assistir vídeo aéreo de indústria">
+        <div class="pf-media"><img src="poster-drone-industria.webp" alt="Assistir vídeo aéreo de indústria" loading="lazy"><span class="pf-play"><svg><use href="#i-play"/></svg></span></div>
+        <div class="pf-info"><span class="pf-cat">Drone</span><h3>Captação aérea industrial</h3><p>Vídeo vertical em alta definição</p></div>
+      </article>
+      <article class="pf-item pf-tall" data-cat="video" data-video="video-imobiliario.mp4" data-title="Vídeo imobiliário" tabindex="0" role="button" aria-label="Assistir vídeo imobiliário">
+        <div class="pf-media"><img src="poster-video-imobiliario.webp" alt="Assistir vídeo imobiliário" loading="lazy"><span class="pf-play"><svg><use href="#i-play"/></svg></span></div>
+        <div class="pf-info"><span class="pf-cat">Vídeo comercial</span><h3>Vídeo imobiliário</h3><p>Aéreo + interno com motion</p></div>
+      </article>
+      <article class="pf-item pf-tall" data-cat="drone" data-video="aereo-cidade.mp4" data-title="Captação aérea — cidade e obras" tabindex="0" role="button" aria-label="Assistir vídeo aéreo da cidade">
+        <div class="pf-media"><img src="poster-aereo-cidade.webp" alt="Assistir vídeo aéreo da cidade" loading="lazy"><span class="pf-play"><svg><use href="#i-play"/></svg></span></div>
+        <div class="pf-info"><span class="pf-cat">Drone</span><h3>Cidade e obras</h3><p>Acompanhamento aéreo</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DESENVOLVIMENTO DE SITES ===================== -->
+<section class="section webdev" id="sites">
+  <div class="container">
+    <div class="sec-head">
+      <p class="kicker reveal">Desenvolvimento de sites</p>
+      <h2 class="h2 reveal">Sites que trabalham <span class="grad">pelo seu negócio</span>.</h2>
+      <p class="lead reveal">Projetos publicados e funcionando. Escolha um site na lista e navegue por ele no computador e no celular, aqui mesmo.</p>
+    </div>
+
+    <div class="wd-stage reveal">
+      <div class="wd-devices" id="wdDevices">
+        <div class="wd-desktop">
+          <div class="wd-bar"><span class="tsb-dots"><i></i><i></i><i></i></span><span class="wd-url" id="wdUrl">infinity-360.github.io/restaurantefazbem/</span></div>
+          <div class="wd-screen" data-w="1440"></div>
+        </div>
+        <div class="wd-phone">
+          <div class="wd-screen" data-w="390"></div>
+          <span class="wd-hint">Role dentro do celular</span>
+        </div>
+      </div>
+      <div class="wd-info">
+        <span class="pf-cat" id="wdSeg">Restaurante e marmitaria · Maringá-PR</span>
+        <h3 class="h3" id="wdName">Faz Bem Restaurante</h3>
+        <div class="wd-actions">
+          <button class="btn btn-primary" type="button" id="wdOpen">Abrir em tela cheia <svg><use href="#i-expand"/></svg></button>
+          <a class="btn btn-ghost" id="wdExt" href="https://infinity-360.github.io/restaurantefazbem/" target="_blank" rel="noopener">Nova aba <svg><use href="#i-ext"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wd-list" role="tablist" aria-label="Projetos de sites">
+        <button class="wd-item" role="tab" aria-selected="true" data-url="https://infinity-360.github.io/restaurantefazbem/" data-name="Faz Bem Restaurante" data-seg="Restaurante e marmitaria" data-city="Maringá-PR">
+          <span class="wd-item-name">Faz Bem Restaurante</span><span class="wd-item-meta">Restaurante e marmitaria · Maringá-PR</span><ul class="wd-tags"><li>Vídeo controlado pela rolagem</li><li>Pedidos pelo iFood e WhatsApp</li><li>Tour 360° integrado</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/alcaida-site/" data-name="Alcaida Academia" data-seg="Academia + loja fitness" data-city="Apucarana-PR">
+          <span class="wd-item-name">Alcaida Academia</span><span class="wd-item-meta">Academia + loja fitness · Apucarana-PR</span><ul class="wd-tags"><li>Vídeo controlado pela rolagem</li><li>Loja Alcaida Fitstyle integrada</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/r4sports-site/" data-name="Academia R4 Sports" data-seg="Academia e assessoria esportiva" data-city="Apucarana-PR">
+          <span class="wd-item-name">Academia R4 Sports</span><span class="wd-item-meta">Academia e assessoria esportiva · Apucarana-PR</span><ul class="wd-tags"><li>Musculação, funcional, spinning e corrida</li><li>Contato direto pelo WhatsApp</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/workoutacademiaap/" data-name="Workout Academia" data-seg="Academia" data-city="Paraná">
+          <span class="wd-item-name">Workout Academia</span><span class="wd-item-meta">Academia · Paraná</span><ul class="wd-tags"><li>Tour virtual 360° na capa</li><li>Musculação orientada</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/garage35site/" data-name="Garage 35 Auto Center" data-seg="Oficina mecânica" data-city="Apucarana-PR">
+          <span class="wd-item-name">Garage 35 Auto Center</span><span class="wd-item-meta">Oficina mecânica · Apucarana-PR</span><ul class="wd-tags"><li>Tour virtual 360° na capa</li><li>Orçamento pelo WhatsApp</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/barbeariahudson/" data-name="Hudson Barbearia" data-seg="Barbearia por assinatura" data-city="Apucarana-PR">
+          <span class="wd-item-name">Hudson Barbearia</span><span class="wd-item-meta">Barbearia por assinatura · Apucarana-PR</span><ul class="wd-tags"><li>Planos de assinatura em destaque</li><li>Localização e contato</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/criative-cv/" data-name="Criative Comunicação Visual" data-seg="Comunicação visual" data-city="Apucarana-PR">
+          <span class="wd-item-name">Criative Comunicação Visual</span><span class="wd-item-meta">Comunicação visual · Apucarana-PR</span><ul class="wd-tags"><li>Catálogo de serviços</li><li>Orçamento pelo WhatsApp</li></ul>
+        </button>
+        <button class="wd-item" role="tab" aria-selected="false" data-url="https://lucastows360.github.io/lashescamilabeatriz-site/" data-name="Camila Beatriz Lashes" data-seg="Studio de beleza" data-city="Londrina-PR">
+          <span class="wd-item-name">Camila Beatriz Lashes</span><span class="wd-item-meta">Studio de beleza · Londrina-PR</span><ul class="wd-tags"><li>Tour 360° do studio</li><li>Agendamento pelo WhatsApp</li></ul>
+        </button>
+    </div>
+
+    <div class="wd-cta reveal">
+      <div><h3>O próximo site pode ser o seu.</h3><p>Design exclusivo, rápido no celular, com tour 360°, vídeos e botões que levam direto ao seu WhatsApp.</p></div>
+      <a href="#contato" class="btn btn-primary btn-lg" data-service="Site profissional">Quero um site assim <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 08 DEPOIMENTOS ===================== -->
+<section class="section testimonials" id="depoimentos">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="kicker reveal">Depoimentos</p>
+      <h2 class="h2 reveal">Quem já <span class="grad">expandiu a visão</span>.</h2>
+    </div>
+    <!-- Os depoimentos são carregados de depoimentos.js. Enquanto a lista estiver vazia, aparece o convite abaixo. -->
+    <div class="t-grid" id="tGrid" hidden></div>
+    <div class="t-empty reveal" id="tEmpty">
+      <div class="t-quote" aria-hidden="true">“</div>
+      <p>Já fez um projeto com a Infinity 360? Conte como foi a experiência — a sua opinião pode aparecer aqui.</p>
+      <a class="btn btn-ghost" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Quero%20deixar%20meu%20depoimento%20sobre%20o%20trabalho%20de%20voc%C3%AAs%3A%20" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Enviar meu depoimento</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 09 CTA ===================== -->
+<section class="cta" id="cta" aria-label="Chamada para contato">
+  <video class="cta-video" src="aereo-cidade.mp4" poster="poster-aereo-cidade.webp" muted playsinline loop preload="none" aria-hidden="true"></video>
+  <div class="cta-shade" aria-hidden="true"></div>
+  <div class="container cta-in">
+    <img class="cta-mark reveal" src="logo-symbol.png" alt="" width="498" height="235" loading="lazy">
+    <h2 class="cta-title reveal">Seu cliente já está procurando.<br><span class="grad">Ele vai encontrar a sua empresa?</span></h2>
+    <p class="lead reveal">Fale agora com a Infinity 360 e descubra como mostrar o seu negócio do jeito que ele merece ser visto.</p>
+    <div class="cta-actions reveal">
+      <a class="btn btn-wa btn-lg magnetic" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vim%20pelo%20site%20e%20quero%20expandir%20a%20vis%C3%A3o%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+      <a class="btn btn-ghost btn-lg" href="#contato">Pedir orçamento <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10 CONTATO ===================== -->
+<section class="section contact" id="contato">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <p class="kicker reveal">Contato e orçamento</p>
+      <h2 class="h2 reveal">Vamos tirar o seu <span class="grad">projeto do chão</span>.</h2>
+      <p class="lead reveal">Preencha os dados e a sua mensagem chega pronta no nosso WhatsApp comercial.</p>
+      <ul class="contact-list">
+        <li class="reveal"><a href="https://wa.me/5544999750719" target="_blank" rel="noopener"><span class="ci"><svg><use href="#i-wa"/></svg></span><span><small>WhatsApp</small>(44) 99975-0719</span></a></li>
+        <li class="reveal"><a href="mailto:infinity360tour@gmail.com"><span class="ci"><svg><use href="#i-mail"/></svg></span><span><small>E-mail</small>infinity360tour@gmail.com</span></a></li>
+        <li class="reveal"><a href="https://www.google.com/maps/place/Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000/data=!4m2!3m1!1s0x94ec9bd5d1fe7471:0xfb6362aaf8f8b214" target="_blank" rel="noopener"><span class="ci"><svg><use href="#i-pin"/></svg></span><span><small>Endereço</small>Av. Jaboti, 230 · Jardim Menegazzo<br>Apucarana-PR · 86802-000</span></a></li>
+      </ul>
+      <div class="map reveal"><iframe title="Mapa: Infinity 360 em Apucarana-PR" src="https://www.google.com/maps?q=Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <form class="form reveal" id="leadForm" novalidate>
+      <div class="form-head"><img src="logo-symbol.png" alt="" width="498" height="235"><div><strong>Solicite seu orçamento</strong><span>Resposta pelo WhatsApp</span></div></div>
+      <div class="field"><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder=" " required minlength="2"><label for="f-nome">Nome</label><span class="err">Informe o seu nome.</span></div>
+      <div class="field-row">
+        <div class="field"><input id="f-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder=" " required><label for="f-wa">WhatsApp</label><span class="err">Informe um WhatsApp com DDD.</span></div>
+        <div class="field"><input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " required><label for="f-email">E-mail</label><span class="err">Informe um e-mail válido.</span></div>
+      </div>
+      <div class="field field-select"><select id="f-servico" name="servico" required>
+        <option value="" disabled selected hidden></option>
+        <option>Tour Virtual 360°</option>
+        <option>Captação aérea com drone</option>
+        <option>Google Meu Negócio</option>
+        <option>Vídeos institucionais</option>
+        <option>Site profissional</option>
+        <option>Pacote completo (Site + Google + Tour 360°)</option>
+        <option>Outro / ainda não sei</option>
+      </select><label for="f-servico">Serviço desejado</label><span class="err">Escolha um serviço.</span></div>
+      <div class="field"><textarea id="f-msg" name="mensagem" rows="4" placeholder=" " required minlength="5"></textarea><label for="f-msg">Descreva a sua necessidade</label><span class="err">Conte um pouco sobre o seu projeto.</span></div>
+      <label class="consent"><input type="checkbox" id="f-ok" required><span>Concordo com a <a href="privacidade.html">Política de Privacidade</a> e com o envio dos meus dados pelo WhatsApp.</span></label>
+      <button class="btn btn-wa btn-lg btn-block" type="submit"><svg><use href="#i-wa"/></svg>Enviar pelo WhatsApp</button>
+      <p class="form-note">Ao enviar, o WhatsApp abre com a sua mensagem pronta. É só tocar em enviar.</p>
     </form>
   </div>
 </section>
-
 </main>
 
-<!-- ===================== RODAPÉ (volta para a base) ===================== -->
-<footer class="foot">
-  <div class="foot__bg"><img src="fim.webp" alt="" width="1920" height="1080" loading="lazy"></div>
-  <div class="foot__shade" aria-hidden="true"></div>
-  <div class="foot__in">
-    <p class="foot__km mono"><i></i><span class="foot__state">Voltando para a base</span> · <b class="foot__d">1,8</b> km</p>
-    <p class="foot__t" data-split>Seu cliente já está procurando.<br>Ele vai encontrar a sua empresa?</p>
-    <a class="pill foot__pill" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vim%20pelo%20site%20e%20quero%20expandir%20a%20vis%C3%A3o%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><span class="roll" data-t="Chamar no WhatsApp"><span>Chamar no WhatsApp</span></span><span class="pill__arrow"><svg><use href="#i-wa"/></svg></span></a>
-    <div class="foot__cols">
-      <div><p class="mono">Serviços</p><a href="#servicos" data-service-key="tour"><span class="roll" data-t="Tour Virtual 360°"><span>Tour Virtual 360°</span></span></a><a href="#servicos" data-service-key="drone"><span class="roll" data-t="Captação aérea com drone"><span>Captação aérea com drone</span></span></a><a href="#servicos" data-service-key="google"><span class="roll" data-t="Google Meu Negócio"><span>Google Meu Negócio</span></span></a><a href="#servicos" data-service-key="video"><span class="roll" data-t="Vídeos institucionais"><span>Vídeos institucionais</span></span></a><a href="#servicos" data-service-key="site"><span class="roll" data-t="Sites profissionais"><span>Sites profissionais</span></span></a></div>
-      <div><p class="mono">Contato</p><a href="https://wa.me/5544999750719" target="_blank" rel="noopener"><span class="roll" data-t="(44) 99975-0719"><span>(44) 99975-0719</span></span></a><a href="mailto:infinity360tour@gmail.com"><span class="roll" data-t="infinity360tour@gmail.com"><span>infinity360tour@gmail.com</span></span></a><a href="https://www.google.com/maps/place/Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000/data=!4m2!3m1!1s0x94ec9bd5d1fe7471:0xfb6362aaf8f8b214" target="_blank" rel="noopener"><span class="roll" data-t="Av. Jaboti, 230 · Apucarana-PR"><span>Av. Jaboti, 230 · Apucarana-PR</span></span></a></div>
-      <div><p class="mono">Navegação</p><a href="#portfolio"><span class="roll" data-t="Portfólio"><span>Portfólio</span></span></a><a href="#processo"><span class="roll" data-t="Como funciona"><span>Como funciona</span></span></a><a href="privacidade.html"><span class="roll" data-t="Política de Privacidade"><span>Política de Privacidade</span></span></a><a href="#voo"><span class="roll" data-t="Voltar ao topo"><span>Voltar ao topo</span></span></a></div>
+<!-- ===================== 11 RODAPÉ ===================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="logo-horizontal.png" alt="Infinity 360 — Expanda sua visão" width="517" height="97" loading="lazy">
+      <p>Tour virtual 360°, captação aérea com drone, Google Meu Negócio, vídeos institucionais e sites para empresas que querem ser vistas.</p>
+      <div class="socials">
+        <a href="https://wa.me/5544999750719" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+        <a href="mailto:infinity360tour@gmail.com" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+        <a href="#" data-instagram hidden target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-insta"/></svg></a>
+      </div>
     </div>
-    <div class="wordmark foot__word" aria-hidden="true"><span class="wm__l"><span>I</span></span><span class="wm__l"><span>n</span></span><span class="wm__l"><span>f</span></span><span class="wm__l"><span>i</span></span><span class="wm__l"><span>n</span></span><span class="wm__l"><span>i</span></span><span class="wm__l"><span>t</span></span><span class="wm__l"><span>y</span></span><span class="wm__sup"><span>360</span></span></div>
-    <p class="mono foot__copy">© <span class="foot__y">2026</span> Infinity 360 · Expanda sua visão · Apucarana-PR</p>
+    <div><h3>Navegação</h3><ul><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#experiencia">Tour 360°</a></li><li><a href="#portfolio">Portfólio</a></li><li><a href="#sites">Sites</a></li><li><a href="#processo">Como funciona</a></li><li><a href="#contato">Contato</a></li></ul></div>
+    <div><h3>Serviços</h3><ul><li><a href="#contato" data-service="Tour Virtual 360°">Tour Virtual 360°</a></li><li><a href="#contato" data-service="Captação aérea com drone">Captação aérea com drone</a></li><li><a href="#contato" data-service="Google Meu Negócio">Google Meu Negócio</a></li><li><a href="#contato" data-service="Vídeos institucionais">Vídeos institucionais</a></li><li><a href="#contato" data-service="Site profissional">Sites profissionais</a></li></ul></div>
+    <div><h3>Contato</h3><ul class="footer-contact"><li><a href="https://wa.me/5544999750719" target="_blank" rel="noopener">(44) 99975-0719</a></li><li><a href="mailto:infinity360tour@gmail.com">infinity360tour@gmail.com</a></li><li><a href="https://www.google.com/maps/place/Av.+Jaboti,+230+-+Jardim+Menegazzo,+Apucarana+-+PR,+86802-000/data=!4m2!3m1!1s0x94ec9bd5d1fe7471:0xfb6362aaf8f8b214" target="_blank" rel="noopener">Av. Jaboti, 230 · Jardim Menegazzo<br>Apucarana-PR · 86802-000</a></li></ul></div>
   </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Infinity 360. Todos os direitos reservados.</span>
+    <a href="privacidade.html">Política de Privacidade</a>
+    <a href="#inicio" class="to-top">Voltar ao topo ↑</a>
+  </div>
+  <div class="footer-word" aria-hidden="true">INFINITY 360</div>
 </footer>
 
-<a class="wa" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a Infinity 360 no WhatsApp"><svg><use href="#i-wa"/></svg><span>Fale com a gente</span></a>
+<!-- WhatsApp flutuante -->
+<a class="wa-float" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a Infinity 360 no WhatsApp"><svg><use href="#i-wa"/></svg><span>Fale com a gente</span></a>
 
-<div class="cursor" aria-hidden="true"><i class="cursor__x"></i><span class="cursor__read mono">X 0000 · Y 0000</span></div>
-
+<!-- Modal universal (tour, site, vídeo, imagem, serviço) -->
 <dialog class="modal" id="modal" aria-labelledby="modalTitle">
-  <header class="modal__head">
-    <p class="modal__title" id="modalTitle"></p>
-    <div class="modal__acts"><a class="modal__btn" id="modalExt" href="#" target="_blank" rel="noopener">Nova aba</a><button class="modal__btn" type="button" data-close>Fechar</button></div>
-  </header>
-  <div class="modal__body" id="modalBody"></div>
+  <div class="modal-box">
+    <header class="modal-head">
+      <div><span class="kicker" id="modalKicker">Infinity 360</span><h2 id="modalTitle"></h2></div>
+      <div class="modal-actions">
+        <a class="icon-btn" id="modalExt" href="#" target="_blank" rel="noopener" aria-label="Abrir em nova aba" hidden><svg><use href="#i-ext"/></svg></a>
+        <button class="icon-btn" type="button" id="modalFs" aria-label="Tela cheia" hidden><svg><use href="#i-expand"/></svg></button>
+        <button class="icon-btn" type="button" data-close aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </header>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
 </dialog>
 
+<script src="config.js"></script>
+<script src="depoimentos.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
