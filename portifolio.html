@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfólio | Infinity 360 — Tours Virtuais 360° e Sites</title>
+<meta name="description" content="Portfólio da Infinity 360: tours virtuais 360° e sites desenvolvidos para empresas do Paraná. Navegue por cada projeto aqui mesmo.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#04060A">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://infinityview360.com.br/portif%C3%B3lio">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Infinity 360">
+<meta property="og:title" content="Portfólio | Infinity 360">
+<meta property="og:description" content="Tours virtuais 360° e sites desenvolvidos pela Infinity 360.">
+<meta property="og:image" content="https://infinityview360.com.br/og-infinity360.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="poppins-medium.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="inter-regular.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Poppins";src:url(poppins-regular.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url(poppins-medium.woff) format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url(poppins-bold.woff) format("woff");font-weight:700;font-display:swap}
+@font-face{font-family:"Inter";src:url(inter-regular.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url(inter-medium.woff) format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"Inter";src:url(inter-semibold.woff) format("woff");font-weight:600;font-display:swap}
+@font-face{font-family:"Inter";src:url(inter-bold.woff) format("woff");font-weight:700;font-display:swap}
+:root{
+  --bg:#04060A;--bg-2:#070B12;--bg-3:#0B111B;--surface:rgba(255,255,255,.035);--line:rgba(255,255,255,.09);--line-2:rgba(255,255,255,.16);
+  --text:#EEF2F7;--muted:#8E99AB;--blue:#1BA6FF;--blue-2:#0A6CFF;--wa:#25D366;
+  --grad:linear-gradient(100deg,#ffffff 0%,#8fd3ff 40%,#1BA6FF 75%,#0A6CFF 100%);
+  --ease:cubic-bezier(.22,1,.36,1);--pad:clamp(16px,4.5vw,40px);--radius:22px;
+  --font-d:"Poppins","Segoe UI",system-ui,sans-serif;--font-b:"Inter","Segoe UI",system-ui,sans-serif;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.65 var(--font-b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.is-locked{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3{font-family:var(--font-d);font-weight:600;letter-spacing:-.025em;line-height:1.08;margin:0}
+p{margin:0}
+.container{width:min(1240px,100%);margin:0 auto;padding:0 var(--pad)}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:600 11px/1 var(--font-b);letter-spacing:.32em;text-transform:uppercase;color:var(--blue);margin:0 0 18px}
+.kicker::before{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--font-b);white-space:nowrap;transition:transform .4s var(--ease),background .3s,border-color .3s,box-shadow .4s var(--ease)}
+.btn svg{width:18px;height:18px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:linear-gradient(100deg,var(--blue),var(--blue-2));color:#fff;box-shadow:0 10px 30px -10px rgba(27,166,255,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(27,166,255,.75)}
+.btn-ghost{border:1px solid var(--line-2);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--blue)}
+.btn-wa{background:var(--wa);color:#04130a}
+
+/* topo */
+.header{position:sticky;top:0;z-index:30;background:rgba(4,6,10,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand img{height:34px;width:auto}
+.header nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.header nav a:hover{color:var(--text)}
+@media(max-width:760px){.header nav{display:none}.brand img{height:28px}.header .btn{min-height:40px;padding:0 16px;font-size:13px}}
+
+/* abertura */
+.intro{position:relative;padding:clamp(70px,11vw,140px) 0 clamp(40px,6vw,70px);overflow:hidden}
+.intro::before{content:"";position:absolute;inset:-30% -10% auto;height:120%;background:radial-gradient(50% 50% at 70% 30%,rgba(27,166,255,.18),transparent 70%);pointer-events:none}
+.intro h1{font-size:clamp(40px,8vw,88px);max-width:12ch;text-wrap:balance}
+.intro p{margin-top:22px;max-width:620px;color:var(--muted);font-size:clamp(16px,1.6vw,18px)}
+.stats{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:34px;color:var(--muted);font-size:14px}
+.stats b{display:block;font:600 clamp(26px,3vw,34px)/1 var(--font-d);color:var(--text);margin-bottom:6px}
+
+/* seções */
+.section{padding:clamp(60px,9vw,110px) 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 40px;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head h2{font-size:clamp(32px,5.4vw,58px);max-width:14ch;text-wrap:balance}
+.sec-head p{max-width:430px;color:var(--muted)}
+
+/* tours */
+.tours{display:grid;gap:22px}
+@media(min-width:980px){.tours{grid-template-columns:330px 1fr;align-items:start}}
+.tour-list{display:flex;flex-direction:column;gap:10px}
+@media(max-width:979px){.tour-list{flex-direction:row;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding:0 var(--pad) 4px;scroll-snap-type:x mandatory}.tour-list::-webkit-scrollbar{display:none}.tour-item{flex:0 0 auto;min-width:240px;scroll-snap-align:start}}
+.tour-item{position:relative;display:flex;align-items:center;gap:14px;text-align:left;padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);transition:border-color .3s,background .3s,transform .4s var(--ease)}
+.tour-item:hover{border-color:var(--line-2);transform:translateX(3px)}
+.tour-item[aria-selected="true"]{border-color:var(--blue);background:linear-gradient(100deg,rgba(27,166,255,.14),rgba(10,108,255,.04))}
+.tour-n{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1px solid var(--line-2);font:600 13px/1 var(--font-d);color:var(--muted);transition:.3s}
+.tour-item[aria-selected="true"] .tour-n{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 0 18px rgba(27,166,255,.6)}
+.tour-item strong{display:block;font:600 16px/1.25 var(--font-d)}
+.tour-item small{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+.viewer{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-2);background:var(--bg-3);box-shadow:0 40px 90px -40px rgba(27,166,255,.35)}
+.viewer-bar{display:flex;align-items:center;gap:12px;height:50px;padding:0 10px 0 18px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.viewer-bar .dots{display:flex;gap:6px}.viewer-bar .dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.16)}
+.viewer-title{flex:1;min-width:0;font:500 14px/1 var(--font-b);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.viewer-title b{color:var(--text);font-weight:600}
+.icon-btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px;border-radius:999px;background:rgba(255,255,255,.06);font-size:13px;font-weight:600;transition:background .3s}
+.icon-btn:hover{background:var(--blue);color:#fff}
+.icon-btn svg{width:16px;height:16px}
+.viewer-screen{position:relative;aspect-ratio:16/9;background:#000}
+@media(max-width:760px){.viewer-screen{aspect-ratio:auto;height:min(68svh,560px)}}
+.viewer-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.poster{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:radial-gradient(60% 60% at 50% 45%,rgba(27,166,255,.22),transparent 70%),linear-gradient(180deg,#0b111b,#04060a)}
+.poster::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 80px),repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 80px)}
+.play{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px}
+.play-ring{display:grid;place-items:center;width:92px;height:92px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-2));box-shadow:0 0 0 10px rgba(27,166,255,.12),0 0 50px rgba(27,166,255,.55);transition:transform .5s var(--ease)}
+.play:hover .play-ring{transform:scale(1.07)}
+.play-ring svg{width:34px;height:34px;color:#fff}
+.play strong{font:600 clamp(18px,2.2vw,24px)/1.2 var(--font-d)}
+.play small{color:var(--muted);font-size:14px}
+.load{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:14px;pointer-events:none}
+
+/* sites */
+.sites{display:grid;gap:22px}
+@media(min-width:700px){.sites{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.sites{grid-template-columns:repeat(3,1fr)}}
+.site{position:relative;display:flex;flex-direction:column;text-align:left;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);overflow:hidden;transition:border-color .35s,transform .5s var(--ease),box-shadow .5s var(--ease)}
+.site:hover{border-color:rgba(27,166,255,.6);transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(27,166,255,.45)}
+.site-shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0b111b;border-bottom:1px solid var(--line)}
+.site-shot iframe{position:absolute;left:0;top:0;width:1440px;height:900px;border:0;transform-origin:0 0;pointer-events:none}
+.site-shot .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(4,6,10,.75));opacity:0;transition:opacity .4s}
+.site:hover .shade{opacity:1}
+.site-open{position:absolute;left:50%;bottom:16px;transform:translate(-50%,10px);opacity:0;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--blue);color:#fff;font-size:13px;font-weight:600;white-space:nowrap;transition:opacity .4s,transform .5s var(--ease)}
+.site-open svg{width:15px;height:15px}
+.site:hover .site-open,.site:focus-visible .site-open{opacity:1;transform:translate(-50%,0)}
+@media(hover:none){.site-open{opacity:1;transform:translate(-50%,0)}}
+.site-info{padding:18px 20px 20px}
+.site-info .cat{font:600 11px/1 var(--font-b);letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.site-info h3{margin-top:10px;font-size:21px}
+.site-info p{margin-top:6px;color:var(--muted);font-size:14px}
+
+/* tela cheia */
+.full{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;background:#000;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.full.is-open{opacity:1;visibility:visible}
+.full-bar{flex:none;display:flex;align-items:center;gap:10px;height:56px;padding:0 10px 0 16px;padding-top:env(safe-area-inset-top);box-sizing:content-box;background:var(--bg);border-bottom:1px solid var(--line)}
+.full-bar img{height:24px;width:auto}
+.full-title{flex:1;min-width:0;font:600 15px/1.2 var(--font-d);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.seg{display:flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.06)}
+.seg button{height:30px;padding:0 12px;border-radius:999px;font-size:12px;font-weight:600;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+@media(max-width:760px){.seg{display:none}.full-bar img{display:none}}
+.full-stage{position:relative;flex:1;min-height:0;display:flex;justify-content:center;background:radial-gradient(60% 60% at 50% 40%,rgba(27,166,255,.12),transparent 70%),#05080d}
+.full-stage iframe{width:100%;height:100%;border:0;display:block;background:#fff;transition:width .5s var(--ease)}
+.full-stage.is-mobile{padding:18px 0}
+.full-stage.is-mobile iframe{width:min(400px,100%);border-radius:26px;box-shadow:0 0 0 10px #10151d,0 30px 80px rgba(0,0,0,.6)}
+
+/* chamada final */
+.cta{text-align:center;padding:clamp(70px,10vw,120px) 0;border-top:1px solid var(--line);background:radial-gradient(50% 70% at 50% 100%,rgba(27,166,255,.16),transparent 70%)}
+.cta h2{font-size:clamp(30px,5vw,54px);max-width:18ch;margin:0 auto;text-wrap:balance}
+.cta p{margin:18px auto 0;max-width:520px;color:var(--muted)}
+.cta .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.footer a:hover{color:var(--text)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-full" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.3 21.8l4.9-1.3A9.7 9.7 0 1 0 12 2.2Zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.2-.3-.3-.5-.4Z"/></symbol>
+</svg>
+
+<header class="header">
+  <div class="container header-in">
+    <a href="./" class="brand" aria-label="Infinity 360 — voltar ao site"><img src="logo-horizontal.png" alt="Infinity 360 — Expanda sua visão" width="517" height="97"></a>
+    <nav aria-label="Navegação do portfólio">
+      <a href="#tours">Tours 360°</a>
+      <a href="#sites">Sites</a>
+      <a href="./">Voltar ao site</a>
+    </nav>
+    <a class="btn btn-primary" href="./#contato">Solicitar orçamento</a>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="container">
+      <p class="kicker reveal">Portfólio Infinity 360</p>
+      <h1 class="reveal">Projetos que <span class="grad">já estão no ar.</span></h1>
+      <p class="reveal">Tours virtuais 360° e sites desenvolvidos para empresas do Paraná. Escolha um projeto e navegue por ele aqui mesmo, sem sair desta página.</p>
+      <div class="stats reveal"><span><b>4</b>tours virtuais 360°</span><span><b>6</b>sites desenvolvidos</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== TOURS VIRTUAIS ===================== -->
+  <section class="section" id="tours">
+    <div class="container">
+      <div class="sec-head">
+        <div><p class="kicker reveal">Tours virtuais 360°</p><h2 class="reveal">Entre e <span class="grad">caminhe pelo espaço.</span></h2></div>
+        <p class="reveal">Arraste para olhar ao redor e use as setas para trocar de ambiente. Funciona no celular, no computador e em tela cheia.</p>
+      </div>
+      <div class="tours">
+        <div class="tour-list" role="tablist" aria-label="Escolha um tour virtual">
+          <button class="tour-item" role="tab" aria-selected="true" data-tour="https://tour360.mgtour360.com.br/tour/my-pet-store-petshop/" data-name="My Pet Store Petshop"><span class="tour-n">01</span><span><strong>My Pet Store Petshop</strong><small>Pet shop · tour virtual 360°</small></span></button>
+          <button class="tour-item" role="tab" aria-selected="false" data-tour="https://tour360.mgtour360.com.br/tour/armazem-vida-saudavel/" data-name="Armazém Vida Saudável"><span class="tour-n">02</span><span><strong>Armazém Vida Saudável</strong><small>Loja de produtos naturais · tour virtual 360°</small></span></button>
+          <button class="tour-item" role="tab" aria-selected="false" data-tour="https://mgtour360.com.br/tour/hug-maringa/" data-name="Hug Maringá"><span class="tour-n">03</span><span><strong>Hug Maringá</strong><small>Maringá-PR · tour virtual 360°</small></span></button>
+          <button class="tour-item" role="tab" aria-selected="false" data-tour="https://tour360.mgtour360.com.br/tour/bar-do-urso/" data-name="Bar do Urso"><span class="tour-n">04</span><span><strong>Bar do Urso</strong><small>Bar · tour virtual 360°</small></span></button>
+        </div>
+        <div class="viewer reveal" id="viewer">
+          <div class="viewer-bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="viewer-title"><b id="tourName">My Pet Store Petshop</b> · Tour virtual 360°</span>
+            <button class="icon-btn" type="button" id="tourFull"><svg><use href="#i-full"/></svg>Tela cheia</button>
+          </div>
+          <div class="viewer-screen" id="tourScreen">
+            <div class="poster" id="tourPoster">
+              <button class="play" type="button" id="tourPlay"><span class="play-ring"><svg><use href="#i-play"/></svg></span><strong id="tourPlayName">My Pet Store Petshop</strong><small>Iniciar tour virtual 360°</small></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SITES ===================== -->
+  <section class="section" id="sites">
+    <div class="container">
+      <div class="sec-head">
+        <div><p class="kicker reveal">Sites desenvolvidos</p><h2 class="reveal">Sites que trabalham <span class="grad">pelo negócio.</span></h2></div>
+        <p class="reveal">Toque em um projeto para abrir em tela cheia e navegar como o cliente navega, no computador ou no celular.</p>
+      </div>
+      <div class="sites">
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/garageburger/" data-name="Garage Burger"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Hamburgueria</span><h3>Garage Burger</h3><p>Apucarana-PR</p></span></button>
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/polaco-lanches/" data-name="Polaco Lanches"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Lanchonete</span><h3>Polaco Lanches</h3><p>Site com cardápio e pedidos</p></span></button>
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/hudema-energy-drink/" data-name="Hudema Energy Drink"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Bebida energética</span><h3>Hudema Energy Drink</h3><p>Site de produto</p></span></button>
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/power-fitness-sarandi/" data-name="Power Fitness Sarandi"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Academia</span><h3>Power Fitness</h3><p>Sarandi-PR</p></span></button>
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/santocro/" data-name="Santo Crô Cafeteria"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Cafeteria</span><h3>Santo Crô Cafeteria</h3><p>Arapongas-PR</p></span></button>
+        <button class="site reveal" type="button" data-site="https://infinity-360.github.io/restaurantefazbem/" data-name="Restaurante Faz Bem"><span class="site-shot"><span class="shade"></span><span class="site-open"><svg><use href="#i-full"/></svg>Ver em tela cheia</span></span><span class="site-info"><span class="cat">Restaurante e marmitaria</span><h3>Restaurante Faz Bem</h3><p>Maringá-PR</p></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <p class="kicker reveal" style="justify-content:center">Seu projeto</p>
+      <h2 class="reveal">O próximo projeto <span class="grad">pode ser o seu.</span></h2>
+      <p class="reveal">Tour virtual 360°, site, Google Meu Negócio e imagens aéreas para o seu negócio ser encontrado e escolhido.</p>
+      <div class="actions reveal">
+        <a class="btn btn-wa" href="https://wa.me/5544999750719?text=Ol%C3%A1%2C%20Infinity%20360!%20Vi%20o%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="./">Voltar ao site<svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container"><span>© <span id="year">2026</span> Infinity 360 · Apucarana-PR</span><a href="privacidade.html">Política de Privacidade</a></div>
+</footer>
+
+<!-- tela cheia (tours e sites) -->
+<div class="full" id="full" role="dialog" aria-modal="true" aria-labelledby="fullTitle" aria-hidden="true">
+  <div class="full-bar">
+    <img src="logo-horizontal.png" alt="" width="517" height="97">
+    <span class="full-title" id="fullTitle"></span>
+    <div class="seg" id="fullSeg"><button type="button" data-view="desk" aria-pressed="true">Computador</button><button type="button" data-view="mobile" aria-pressed="false">Celular</button></div>
+    <button class="icon-btn" type="button" id="fullClose"><svg><use href="#i-close"/></svg>Fechar</button>
+  </div>
+  <div class="full-stage" id="fullStage"></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var ALLOW = "fullscreen; autoplay; xr-spatial-tracking; gyroscope; accelerometer; magnetometer";
+  $("#year").textContent = new Date().getFullYear();
+
+  // impede o clique do meio / Ctrl+clique de abrir projetos em outra aba
+  document.addEventListener("auxclick", function (e) { if (e.target.closest("[data-tour],[data-site]")) e.preventDefault(); });
+
+  function frame(src, title) {
+    var f = document.createElement("iframe");
+    f.src = src; f.title = title; f.setAttribute("allow", ALLOW); f.setAttribute("allowfullscreen", "");
+    f.setAttribute("referrerpolicy", "no-referrer"); f.loading = "lazy";
+    return f;
+  }
+
+  /* ---------- tours ---------- */
+  var items = $$(".tour-item"), screen = $("#tourScreen"), poster = $("#tourPoster"), cur = items[0], started = false;
+  function startTour() {
+    started = true;
+    screen.innerHTML = '<span class="load">Carregando o tour…</span>';
+    screen.appendChild(frame(cur.dataset.tour, "Tour virtual 360° — " + cur.dataset.name));
+  }
+  $("#tourPlay").addEventListener("click", startTour);
+  items.forEach(function (b) {
+    b.addEventListener("click", function () {
+      cur = b;
+      items.forEach(function (x) { x.setAttribute("aria-selected", x === b ? "true" : "false"); });
+      $("#tourName").textContent = b.dataset.name;
+      if (started) startTour();
+      else { $("#tourPlayName").textContent = b.dataset.name; }
+      if (innerWidth < 980) $("#viewer").scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  });
+  $("#tourFull").addEventListener("click", function () { openFull(cur.dataset.tour, cur.dataset.name + " · Tour virtual 360°", false); });
+
+  /* ---------- sites: prévia ao vivo, sem clique, carregada perto da tela ---------- */
+  var shots = $$(".site");
+  function fit(shot) {
+    var f = $("iframe", shot); if (!f) return;
+    var w = shot.clientWidth; f.style.transform = "scale(" + (w / 1440) + ")";
+  }
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var card = e.target, shot = $(".site-shot", card);
+      if (!$("iframe", shot)) {
+        var f = frame(card.dataset.site, "Prévia do site " + card.dataset.name);
+        f.setAttribute("tabindex", "-1"); f.setAttribute("aria-hidden", "true");
+        shot.insertBefore(f, shot.firstChild); fit(shot);
+      }
+      io.unobserve(card);
+    });
+  }, { rootMargin: "300px 0px" }) : null;
+  shots.forEach(function (card) {
+    if (io) io.observe(card);
+    card.addEventListener("click", function () { openFull(card.dataset.site, card.dataset.name, true); });
+  });
+  addEventListener("resize", function () { shots.forEach(function (c) { fit($(".site-shot", c)); }); });
+
+  /* ---------- tela cheia ---------- */
+  var full = $("#full"), stage = $("#fullStage"), seg = $("#fullSeg"), lastFocus = null;
+  function setView(v) {
+    stage.classList.toggle("is-mobile", v === "mobile");
+    $$("button", seg).forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.view === v ? "true" : "false"); });
+  }
+  $$("button", seg).forEach(function (b) { b.addEventListener("click", function () { setView(b.dataset.view); }); });
+  function openFull(src, title, isSite) {
+    lastFocus = document.activeElement;
+    stage.innerHTML = "";
+    stage.appendChild(frame(src, title));
+    $("#fullTitle").textContent = title;
+    seg.style.visibility = isSite ? "visible" : "hidden";
+    setView("desk");
+    full.classList.add("is-open"); full.setAttribute("aria-hidden", "false");
+    document.body.classList.add("is-locked");
+    if (full.requestFullscreen && matchMedia("(hover: hover)").matches) full.requestFullscreen().catch(function () {});
+    $("#fullClose").focus();
+  }
+  function closeFull() {
+    if (!full.classList.contains("is-open")) return;
+    full.classList.remove("is-open"); full.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("is-locked");
+    if (document.fullscreenElement) document.exitFullscreen().catch(function () {});
+    setTimeout(function () { stage.innerHTML = ""; }, 350);
+    if (lastFocus) lastFocus.focus();
+  }
+  $("#fullClose").addEventListener("click", closeFull);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeFull(); });
+  document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement) closeFull(); });
+
+  /* ---------- entrada suave ---------- */
+  var rio = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); rio.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -8% 0px" }) : null;
+  $$(".reveal").forEach(function (el) { rio ? rio.observe(el) : el.classList.add("is-in"); });
+})();
+</script>
+</body>
+</html>
